@@ -29,6 +29,14 @@ function Navigation(props) {
     setMobileOpen((prevState) => !prevState);
   };
 
+  //   const showInMapClicked = () => {
+  //     window.open(
+  //       `https://www.google.com/maps/place/Helen+Lucy+Child+Care+Center/@41.987226,-87.7918279,17z/data=!4m14!1m7!3m6!1s0x880fc95b3afd064f:0xa40bfcc70b23822e!2sHelen+Lucy+Child+Care+Center!8m2!3d41.987222!4d-87.789253!16s%2Fg%2F1v940nmd!3m5!1s0x880fc95b3afd064f:0xa40bfcc70b23822e!8m2!3d41.987222!4d-87.789253!16s%2Fg%2F1v940nmd?authuser=0&entry=ttu`,
+  //       `_blank`,
+  //       `noopener`
+  //     );
+  //   };
+
   const drawer = (
     <Box
       className="drawerBox"
@@ -74,10 +82,25 @@ function Navigation(props) {
             aria-controls="menu-appbar"
             aria-haspopup="true"
             color="inherit"
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 1, display: { sm: "none" } }}
           >
             <CallIcon />
           </IconButton>
+          <a
+            target="_blank"
+            href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
+          >
+            <IconButton
+              size="large"
+              aria-label="our location"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              color="inherit"
+              sx={{ mr: 1, display: { sm: "none" } }}
+            >
+              <PinDropIcon />
+            </IconButton>
+          </a>
           <Typography
             variant="h6"
             component="div"
@@ -91,6 +114,32 @@ function Navigation(props) {
                 {item}
               </Button>
             ))}
+            <a
+              target="_blank"
+              href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
+            >
+              <IconButton
+                size="medium"
+                aria-label="our location"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                color="inherit"
+                sx={{ mr: 1, display: { sm: "inline" } }}
+              >
+                <PinDropIcon />
+              </IconButton>
+            </a>
+
+            <IconButton
+              size="medium"
+              aria-label="call us"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              color="inherit"
+              sx={{ mr: 1, display: { sm: "inline" } }}
+            >
+              <CallIcon />
+            </IconButton>
           </Box>
         </Toolbar>
       </AppBar>
