@@ -15,6 +15,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import CallIcon from "@mui/icons-material/Call";
+import PinDropIcon from "@mui/icons-material/PinDrop";
 
 const drawerWidth = 240;
 const navItems = ["Home", "Why US", "Our Nannies", "Reviews", "Contact", "FAQ"];
@@ -28,7 +30,11 @@ function Navigation(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box
+      className="drawerBox"
+      onClick={handleDrawerToggle}
+      sx={{ textAlign: "center" }}
+    >
       <Typography variant="h6" sx={{ my: 2 }}>
         DAYCARE
       </Typography>
@@ -62,10 +68,20 @@ function Navigation(props) {
           >
             <MenuIcon />
           </IconButton>
+          <IconButton
+            size="large"
+            aria-label="call us"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            color="inherit"
+            sx={{ mr: 2, display: { sm: "none" } }}
+          >
+            <CallIcon />
+          </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ flexGrow: 1, display: { sm: "block" } }}
           >
             DAYCARE
           </Typography>

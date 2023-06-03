@@ -1,2 +1,6 @@
-.tlbar {
+@media screen and (max-width: 600px) {
+  .tlbar {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
