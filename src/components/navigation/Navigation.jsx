@@ -76,16 +76,18 @@ function Navigation(props) {
           >
             <MenuIcon />
           </IconButton>
-          <IconButton
-            size="large"
-            aria-label="call us"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            color="inherit"
-            sx={{ mr: 1, display: { sm: "none" } }}
-          >
-            <CallIcon />
-          </IconButton>
+          <a target="_blank" href="tel:+17737637872">
+            <IconButton
+              size="large"
+              aria-label="call us"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              color="inherit"
+              sx={{ mr: 1, display: { sm: "none" } }}
+            >
+              <CallIcon />
+            </IconButton>
+          </a>
           <a
             target="_blank"
             href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
@@ -129,17 +131,18 @@ function Navigation(props) {
                 <PinDropIcon />
               </IconButton>
             </a>
-
-            <IconButton
-              size="medium"
-              aria-label="call us"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              color="inherit"
-              sx={{ mr: 1, display: { sm: "inline" } }}
-            >
-              <CallIcon />
-            </IconButton>
+            <a target="_blank" href="tel:+17737637872">
+              <IconButton
+                size="medium"
+                aria-label="call us"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                color="inherit"
+                sx={{ mr: 1, display: { sm: "inline" } }}
+              >
+                <CallIcon />
+              </IconButton>
+            </a>
           </Box>
         </Toolbar>
       </AppBar>
