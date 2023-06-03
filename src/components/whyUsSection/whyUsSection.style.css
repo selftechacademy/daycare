@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.header {
+  flex: 2;
+  /* width: 40%; */
+}
+.INFO {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-basis: 60%;
+}
+
+.item {
+  flex-basis: 10%;
+}

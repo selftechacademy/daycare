@@ -1,11 +1,11 @@
 import React from "react";
-import "./app.css";
+import "./App.css";
+import WhyUsSection from "./components/whyUsSection/WhyUsSection";
 
 function App() {
   return (
     <div>
-      App
-      <h1> HEllo</h1>
+      <WhyUsSection />
     </div>
   );
 }
