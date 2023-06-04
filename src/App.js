@@ -1,8 +1,8 @@
 import React from "react";
-import "./app.css";
+import "./App.css";
+import FAQ from "./components/fAQSection/FAQ";
 
 function App() {
-  return <div>App</div>;
-}
-
+  return (
+   
 export default App;
