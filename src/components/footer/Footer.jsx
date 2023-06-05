@@ -51,7 +51,7 @@ function Footer() {
           <div class="row">
             <div class="copyrightFooter">
               <p class="copyright-text">
-                {`Copyright &copy; ${currentYear.getFullYear()} All Rights Reserved by`}
+                {`Copyright  © ${currentYear.getFullYear()} All Rights Reserved by`}
                 <a href="#"> Helen Lucy Child Care</a>.
               </p>
             </div>

@@ -1,5 +1,5 @@
 .mainContainer {
-  background-color: #26272b;
+  background-color: #2e2c2c;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
@@ -61,6 +61,9 @@
   .mainContainer .copyright-text,
   .mainContainer .social-icons {
     text-align: center;
+  }
+  .containerCopyright {
+    margin-top: 1rem;
   }
 }
 .social-icons {
@@ -129,6 +132,14 @@
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 1rem;
+}
+
+.aboutContainer {
+  width: 50%;
+}
+
+.containerCopyright {
+  margin-top: 1rem;
 }
