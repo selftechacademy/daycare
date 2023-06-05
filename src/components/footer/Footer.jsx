@@ -47,39 +47,37 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div class="containerCopyright">
-          <div class="row">
-            <div class="copyrightFooter">
-              <p class="copyright-text">
-                {`Copyright  © ${currentYear.getFullYear()} All Rights Reserved by`}
-                <a href="#"> Helen Lucy Child Care</a>.
-              </p>
-            </div>
 
-            <div class="iconsFooter">
-              <ul class="social-icons">
-                <li>
-                  <a class="facebook" href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="twitter" href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="dribbble" href="#">
-                    <i class="fa fa-dribbble"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="linkedin" href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div class="containerCopyright">
+          <div class="iconsFooter">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a class="twitter" href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="dribbble" href="#">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+              </li>
+              <li>
+                <a class="linkedin" href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyrightFooter">
+            <p class="copyright-text">
+              {`Copyright  © ${currentYear.getFullYear()} All Rights Reserved by`}
+              <a href="#"> Helen Lucy Child Care</a>.
+            </p>
           </div>
         </div>
       </footer>
