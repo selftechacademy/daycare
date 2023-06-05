@@ -1,8 +1,10 @@
-.container {
+.request-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: linear-gradient(to bottom, #051937, #184568, #2e769a, #4aabc9, #71e3f4);
+
 }
 
 .request-app {
@@ -11,6 +13,10 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    width: 600px;
+    height: 600px;
+    background-color: #c8c8d6;
+    border-radius: 8px
 }
 
 .request-text {

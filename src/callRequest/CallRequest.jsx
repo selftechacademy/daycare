@@ -27,7 +27,7 @@ const onChangeHandler = (e) => {
     }
 
     return (
-      <div className="container">
+      <div className="request-container">
         <div className="request-app">
           <h1 className="request-text">Ask your question</h1>
           <TextField
