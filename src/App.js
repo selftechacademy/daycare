@@ -1,12 +1,14 @@
 import MainPage from "./components/mainPage/MainPage";
 import Navigation from "./components/navigation/Navigation";
-  import "./App.css";
+import Footer from "./components/footer/Footer";
+import "./App.css";
 
 function App() {
   return (
     <div>
-    <MainPage />
+      <MainPage />
       <Navigation />
+      <Footer />
     </div>
   );
 }
