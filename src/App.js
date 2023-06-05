@@ -1,12 +1,14 @@
 import MainPage from "./components/mainPage/MainPage";
 import Navigation from "./components/navigation/Navigation";
-  import "./App.css";
+import ImageGallery from "./components/imageGallery/ImageGallery";
+import "./App.css";
 
 function App() {
   return (
     <div>
-    <MainPage />
+      <MainPage />
       <Navigation />
+      <ImageGallery />
     </div>
   );
 }
