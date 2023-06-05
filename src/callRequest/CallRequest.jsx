@@ -44,7 +44,7 @@ const onChangeHandler = (e) => {
             label="Name"
             color="primary"
             focused
-            placeholder="Name"
+            placeholder="John"
             onChange={onChangeHandler}
             value={sendedMessage.name}
           />
@@ -62,7 +62,7 @@ const onChangeHandler = (e) => {
             label="Last Name"
             color="primary"
             focused
-            placeholder="Last Name"
+            placeholder="Smith"
             onChange={onChangeHandler}
             value={sendedMessage.lastName}
           />
@@ -80,12 +80,12 @@ const onChangeHandler = (e) => {
             label="Email"
             color="primary"
             focused
-            placeholder="Email"
+            placeholder="john123@gmail.com"
             onChange={onChangeHandler}
             value={sendedMessage.email}
           />
           <TextField
-            sx={{
+                    sx={{
               width: {
                 xs: "300px",
                 sm: "250px",
@@ -97,13 +97,15 @@ const onChangeHandler = (e) => {
             name="message"
             fullWidth
             label="Type your Message"
+            placeholder="I have a guestion, example: ..."
             color="primary"
             focused
             onChange={onChangeHandler}
             value={sendedMessage.message}
           />
           <Button
-            sx={{
+                    sx={{
+                fontSize: "1.5rem",
               width: {
                 xs: "300px",
                 sm: "250px",
