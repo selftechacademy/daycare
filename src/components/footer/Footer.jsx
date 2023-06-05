@@ -3,12 +3,14 @@ import "./footer.style.css";
 import React from "react";
 
 function Footer() {
+  const currentYear = new Date();
+
   return (
     <>
-      <footer class="site-footer">
-        <div class="container">
+      <footer class="mainContainer">
+        <div class="containerFooter">
           <div class="row">
-            <div class="col-sm-12 col-md-6">
+            <div class="aboutContainer">
               <h6>About</h6>
               <p class="text-justify">
                 Helen Lucy Child Care Center provides caring and dedicated child
@@ -20,7 +22,7 @@ function Footer() {
               </p>
             </div>
 
-            <div class="col-xs-6 col-md-3">
+            <div class="linksContainer">
               <h6>Quick Links</h6>
               <ul class="footer-links">
                 <li>
@@ -45,16 +47,16 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="containerCopyright">
           <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
+            <div class="copyrightFooter">
               <p class="copyright-text">
-                Copyright &copy; 2023 All Rights Reserved by
+                {`Copyright &copy; ${currentYear.getFullYear()} All Rights Reserved by`}
                 <a href="#"> Helen Lucy Child Care</a>.
               </p>
             </div>
 
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="iconsFooter">
               <ul class="social-icons">
                 <li>
                   <a class="facebook" href="#">

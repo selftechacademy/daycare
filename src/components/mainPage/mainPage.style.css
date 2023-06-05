@@ -43,13 +43,7 @@
   padding-bottom: 30px;
 }
 
-/* span {
-  color: yellow;
-} */
-
-/*I gave classname to span element because Yellow color was applying to my component as well */
-
-.spanMain {
+.main-list-item span {
   color: yellow;
 }
 
