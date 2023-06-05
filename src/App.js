@@ -1,8 +1,13 @@
 import React from "react";
 import "./app.css";
+import NanniesCard from "./nanniesCard/NanniesCard";
 
 function App() {
-  return <div>App</div>;
+  return (
+    <div>
+      <NanniesCard />
+    </div>
+  );
 }
 
 export default App;
