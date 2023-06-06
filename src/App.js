@@ -10,11 +10,11 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <CallRequest />
       <MainPage />
       <Navigation />
       <ImageGallery />
-          <Footer />
+      <CallRequest />
+      <Footer />
     </div>
   );
 }

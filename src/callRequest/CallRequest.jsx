@@ -2,6 +2,8 @@ import "./callRequest.style.css";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { useState } from "react";
+import { Player } from "@lottiefiles/react-lottie-player";
+import Kid from "../images/55166-flying-boy.json";
 
 const defaultSendedMessage = {
     name: "",
@@ -29,7 +31,15 @@ const onChangeHandler = (e) => {
     return (
       <div className="request-container">
         <div className="request-app">
-          <h1 className="request-text">Ask your question</h1>
+          <h1 className="request-text">
+            Ask your question
+            <Player
+              src={Kid}
+              loop
+              autoplay
+              style={{ height: "300px", width: "300px" }}
+            />
+          </h1>
           <TextField
             sx={{
               width: {
@@ -85,7 +95,7 @@ const onChangeHandler = (e) => {
             value={sendedMessage.email}
           />
           <TextField
-                    sx={{
+            sx={{
               width: {
                 xs: "300px",
                 sm: "250px",
@@ -104,8 +114,8 @@ const onChangeHandler = (e) => {
             value={sendedMessage.message}
           />
           <Button
-                    sx={{
-                fontSize: "1.5rem",
+            sx={{
+              fontSize: "1.5rem",
               width: {
                 xs: "300px",
                 sm: "250px",
