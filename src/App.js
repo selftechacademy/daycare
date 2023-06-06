@@ -1,3 +1,6 @@
+import React from "react";
+import "./app.css";
+import NanniesCard from "./nanniesCard/NanniesCard";
 import MainPage from "./components/mainPage/MainPage";
 import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
@@ -8,8 +11,9 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <MainPage />
       <Navigation />
+      <MainPage />
+      <NanniesCard />
       <ImageGallery />
       <GoogleMapsDirections />
       <Footer />
