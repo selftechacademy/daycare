@@ -4,41 +4,43 @@
   box-sizing: border-box;
 }
 body {
-  display: grid;
-  align-content: center;
-  min-height: 100vh;
-  margin: 10px;
+  font-family: "Source Code Pro", monospace;
+  color: white;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 10px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgba(156, 166, 239, 0.177);
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  /* background-color: rgba(156, 166, 239, 0.177); */
+  height: 100vh;
 
-  height: 95vh;
+  background-image: url("//images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/9e0a28834a3c58f8ae5852fe/Untitled-2.jpg");
 }
+
 .info-container {
   display: flex;
-  justify-content: space-around;
-  margin-top: 70px;
-}
-
-.INFO {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  flex-basis: 40%;
+  flex-wrap: wrap;
   gap: 20px;
+  align-items: center;
+}
+.header {
+  margin-top: 60px;
+  margin-left: 20px;
 }
 
 .item {
-  flex-basis: 10%;
-  justify-content: space-between;
+  flex-basis: 45%;
 }
 
 .items-text {
-  font-size: larger;
+  font-size: large;
+}
+.header-text {
+  font-size: x-large;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    border: 10px;
+  }
 }
