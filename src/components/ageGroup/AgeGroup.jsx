@@ -14,6 +14,7 @@ import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import { tiers } from "./Tiers";
 import { fontWeight } from "@mui/system";
+import { backdropClasses } from "@mui/material";
 
 const defaultTheme = createTheme();
 
@@ -69,13 +70,7 @@ function AgeGroup() {
                 <CardHeader
                   className="cardTitle"
                   title={tier.title}
-                  titleTypographyProps={{ align: "center" }}
-                  //   sx={{
-                  //     backgroundColor: (theme) =>
-                  //       theme.palette.mode === "light"
-                  //         ? theme.palette.grey[200]
-                  //         : theme.palette.grey[700],
-                  //   }}
+                  titleTypographyProps={{ align: "center", fontWeight: "bold" }}
                   sx={{
                     backgroundColor: `${tier.color}`,
                     color: "white",
@@ -106,7 +101,16 @@ function AgeGroup() {
                   </ul>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant={tier.buttonVariant}>
+                  <Button
+                    fullWidth
+                    variant={tier.buttonVariant}
+                    sx={{
+                      border: "3px solid black",
+                      color: "black",
+                      fontWeight: "bold",
+                      backgroundColor: `${tier.color}`,
+                    }}
+                  >
                     {tier.buttonText}
                   </Button>
                 </CardActions>
