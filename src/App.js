@@ -3,6 +3,7 @@ import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import ImageGallery from "./components/imageGallery/ImageGallery";
 import "./App.css";
+import AgeGroup from "./components/ageGroup/AgeGroup";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <MainPage />
       <Navigation />
       <ImageGallery />
-          <Footer />
+      <AgeGroup />
+      <Footer />
     </div>
   );
 }
