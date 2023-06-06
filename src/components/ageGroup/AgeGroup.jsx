@@ -12,74 +12,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
-
-const tiers = [
-  {
-    title: "Infant",
-    ageGroupPic: "https://source.unsplash.com/random/?cute-infant&1",
-    description: [
-      "+ Safe and secure environment",
-      "+ Expert caregivers",
-      "+ Milestone support",
-      "+ Sensory experiences",
-      "+ Happy childhood",
-    ],
-    buttonText: "Want more info?",
-    buttonVariant: "outlined",
-  },
-  {
-    title: "Toddler",
-    ageGroupPic: "https://source.unsplash.com/random/?toddler-playing&1",
-    description: [
-      "+ Individual growth",
-      "+ Language development",
-      "+ Sharing and following directions",
-      "+ Movement and play",
-      "+ Engaging activities",
-    ],
-    buttonText: "Want more info?",
-    buttonVariant: "outlined",
-  },
-  {
-    title: "Pre-School",
-    ageGroupPic: "https://source.unsplash.com/random/?pre-school&3",
-    description: [
-      "+ Whole child development",
-      "+ Child-centered curriculum",
-      "+ Individualized lesson plans",
-      "+ Varied interaction settings",
-      "+ Diverse learning environments",
-    ],
-    buttonText: "Want more info?",
-    buttonVariant: "outlined",
-  },
-  {
-    title: "Pre-Kindergarten",
-    ageGroupPic: "https://source.unsplash.com/random/?pre-k&4",
-    description: [
-      "+ Kindergarten readiness",
-      "+ Professional educators",
-      "+ Child-centered curriculum",
-      "+ Varied interaction settings",
-      "+ Diverse learning centers",
-    ],
-    buttonText: "Want more info?",
-    buttonVariant: "outlined",
-  },
-  {
-    title: "School Age",
-    ageGroupPic: "https://source.unsplash.com/random/?learning-kids&5",
-    description: [
-      "+ Programming school",
-      "+ Summer program",
-      "+ Homework assistance",
-      "+ Interest-based activities",
-      "+ Exciting field trips",
-    ],
-    buttonText: "Want more info?",
-    buttonVariant: "outlined",
-  },
-];
+import { tiers } from "./Tiers";
 
 const defaultTheme = createTheme();
 
@@ -119,7 +52,7 @@ function AgeGroup() {
         </Typography>
       </Container>
       {/* End hero unit */}
-      <Container maxWidth="md" component="main">
+      <Container maxWidth="md" component="main" className="mainAgeContainer">
         <Grid container spacing={5} alignItems="flex-end">
           {tiers.map((tier) => (
             // Enterprise card is full width at sm breakpoint
@@ -128,7 +61,7 @@ function AgeGroup() {
               key={tier.title}
               xs={13}
               sm={tier.title === "Enterprise" ? 13 : 6}
-              md={4}
+              md={6}
             >
               <Card>
                 <CardHeader
@@ -155,13 +88,7 @@ function AgeGroup() {
                       variant="h4"
                       color="text.primary"
                     > */}
-                    <img
-                      className="ageProgrImg"
-                      src={tier.ageGroupPic}
-                      alt="infant"
-                      height="200px"
-                      width="200px"
-                    />
+                    {tier.ageGroupPic}
                   </Box>
                   <ul>
                     {tier.description.map((line) => (
