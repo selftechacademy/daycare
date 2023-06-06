@@ -14,7 +14,7 @@ function App() {
       <Navigation />
       <ImageGallery />
       <CallRequest />
-      <Footer />
+          <Footer />
     </div>
   );
 }
