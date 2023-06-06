@@ -13,9 +13,11 @@ import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import { tiers } from "./Tiers";
+import { fontWeight } from "@mui/system";
 
 const defaultTheme = createTheme();
 
+const redColor = "FFB84C";
 function AgeGroup() {
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -65,13 +67,18 @@ function AgeGroup() {
             >
               <Card>
                 <CardHeader
+                  className="cardTitle"
                   title={tier.title}
                   titleTypographyProps={{ align: "center" }}
+                  //   sx={{
+                  //     backgroundColor: (theme) =>
+                  //       theme.palette.mode === "light"
+                  //         ? theme.palette.grey[200]
+                  //         : theme.palette.grey[700],
+                  //   }}
                   sx={{
-                    backgroundColor: (theme) =>
-                      theme.palette.mode === "light"
-                        ? theme.palette.grey[200]
-                        : theme.palette.grey[700],
+                    backgroundColor: `${tier.color}`,
+                    color: "white",
                   }}
                 />
                 <CardContent>
@@ -83,11 +90,6 @@ function AgeGroup() {
                       mb: 2,
                     }}
                   >
-                    {/* <Typography
-                      component="h2"
-                      variant="h4"
-                      color="text.primary"
-                    > */}
                     {tier.ageGroupPic}
                   </Box>
                   <ul>

@@ -1,11 +1,12 @@
 export const tiers = [
   {
     title: "Toddler",
+    color: "#FFB84C",
     ageGroupPic: (
       <svg
-        height="512pt"
+        height="200pt"
         viewBox="-26 0 512 512.00006"
-        width="512pt"
+        width="200pt"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -99,11 +100,12 @@ export const tiers = [
   },
   {
     title: "Pre-School",
+    color: "#F266AB",
     ageGroupPic: (
       <svg
-        height="511pt"
+        height="200pt"
         viewBox="-21 1 511 511.999"
-        width="511pt"
+        width="200pt"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -233,12 +235,13 @@ export const tiers = [
   },
   {
     title: "Pre-Kindergarten",
+    color: "#A459D1",
     ageGroupPic: (
       <svg
         id="Layer_4"
-        height="512"
+        height="200"
         viewBox="0 0 512 512"
-        width="512"
+        width="200"
         xmlns="http://www.w3.org/2000/svg"
         data-name="Layer 4"
       >
@@ -320,13 +323,14 @@ export const tiers = [
   },
   {
     title: "School Age",
+    color: "#2CD3E1",
     ageGroupPic: (
       <svg
         id="Capa_1"
         enable-background="new 0 0 512 512"
-        height="512"
+        height="200"
         viewBox="0 0 512 512"
-        width="512"
+        width="200"
         xmlns="http://www.w3.org/2000/svg"
       >
         <g>

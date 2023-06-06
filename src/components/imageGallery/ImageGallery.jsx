@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
