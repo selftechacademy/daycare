@@ -5,13 +5,14 @@ import MainPage from "./components/mainPage/MainPage";
 import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import ImageGallery from "./components/imageGallery/ImageGallery";
-import "./App.css";
+import DaycareActiv from "./components/daycare-activ/DaycareActiv";
 
 function App() {
   return (
     <div>
       <Navigation />
       <MainPage />
+      <DaycareActiv />
       <NanniesCard />
       <ImageGallery />
       <Footer />
