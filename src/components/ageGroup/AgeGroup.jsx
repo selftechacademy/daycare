@@ -16,7 +16,7 @@ import Container from "@mui/material/Container";
 const tiers = [
   {
     title: "Infant",
-    ageGroupPic: "Picture",
+    ageGroupPic: "https://source.unsplash.com/random/?cute-infant&1",
     description: [
       "+ Safe and secure environment",
       "+ Expert caregivers",
@@ -29,7 +29,7 @@ const tiers = [
   },
   {
     title: "Toddler",
-    ageGroupPic: "Picture",
+    ageGroupPic: "https://source.unsplash.com/random/?toddler-playing&1",
     description: [
       "+ Individual growth",
       "+ Language development",
@@ -42,7 +42,7 @@ const tiers = [
   },
   {
     title: "Pre-School",
-    ageGroupPic: "Picture",
+    ageGroupPic: "https://source.unsplash.com/random/?pre-school&3",
     description: [
       "+ Whole child development",
       "+ Child-centered curriculum",
@@ -55,7 +55,7 @@ const tiers = [
   },
   {
     title: "Pre-Kindergarten",
-    ageGroupPic: "Picture",
+    ageGroupPic: "https://source.unsplash.com/random/?pre-k&4",
     description: [
       "+ Kindergarten readiness",
       "+ Professional educators",
@@ -68,7 +68,7 @@ const tiers = [
   },
   {
     title: "School Age",
-    ageGroupPic: "Picture",
+    ageGroupPic: "https://source.unsplash.com/random/?learning-kids&5",
     description: [
       "+ Programming school",
       "+ Summer program",
@@ -150,13 +150,18 @@ function AgeGroup() {
                       mb: 2,
                     }}
                   >
-                    <Typography
+                    {/* <Typography
                       component="h2"
                       variant="h4"
                       color="text.primary"
-                    >
-                      {tier.ageGroupPic}
-                    </Typography>
+                    > */}
+                    <img
+                      className="ageProgrImg"
+                      src={tier.ageGroupPic}
+                      alt="infant"
+                      height="200px"
+                      width="200px"
+                    />
                   </Box>
                   <ul>
                     {tier.description.map((line) => (
