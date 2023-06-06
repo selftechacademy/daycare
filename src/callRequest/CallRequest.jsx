@@ -16,8 +16,8 @@ const SignUpForm = () => {
 
     const [sendedMessage, setSendedMessage] = useState(defaultSendedMessage);
 
-    const onClickHandler = (e) => {
-        console.log(sendedMessage);
+  const onSubmitHandler = () => {
+      console.log(sendedMessage);
     }
 
 const onChangeHandler = (e) => {
@@ -30,7 +30,7 @@ const onChangeHandler = (e) => {
 
     return (
       <div className="request-container">
-        <div className="request-app">
+        <form className="request-form">
           <h1 className="request-text">
             Ask your question
             <Player
@@ -115,7 +115,8 @@ const onChangeHandler = (e) => {
           />
           <Button
             sx={{
-              fontSize: "1.5rem",
+              marginBottom: "25px",
+              fontSize: "2rem",
               width: {
                 xs: "300px",
                 sm: "250px",
@@ -125,11 +126,11 @@ const onChangeHandler = (e) => {
               },
             }}
             variant="contained"
-            onClick={onClickHandler}
+            onSubmit={onSubmitHandler}
           >
             Send
           </Button>
-        </div>
+        </form>
       </div>
     );
 }
