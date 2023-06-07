@@ -2,6 +2,7 @@ import Button from "@mui/material/Button";
 import backgroundOne from "./../../images/daycare.jpg";
 import backgroundTwo from "./../../images/daycare2.jpg";
 import backgroundThree from "./../../images/daycare3.jpg";
+import backgroundFour from "./../../images/cdc-8LITuYkZRIo-unsplash.jpg";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
@@ -20,7 +21,7 @@ const MainPage = () => {
         centeredSlides={true}
         allowTouchMove={false}
         autoplay={{
-          delay: 5000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         navigation={false}
@@ -40,27 +41,37 @@ const MainPage = () => {
             alt="children"
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={backgroundFour}
+            className="main-background"
+            alt="children"
+          />
+        </SwiperSlide>
       </Swiper>
       <div className="main-page">
         <h1 className="title">Helen Lucy Daycare</h1>
         <ul className="main-page-list">
-          <li className="main-list-item">
-            Nurturing <span>Hearts</span>,
+          <li className="main-list-item-one">
+            Nurturing <span className="main-list-accent">Hearts</span>,
           </li>
-          <li className="main-list-item">
-            Growing <span>Minds</span>,
+          <li className="main-list-item-two">
+            Growing <span className="main-list-accent">Minds</span>,
           </li>
-          <li className="main-list-item">
-            Where <span>Children</span> Shine!
+          <li className="main-list-item-three">
+            Where <span className="main-list-accent">Children</span> Shine!
           </li>
         </ul>
         <Button
           variant="contained"
           className="main-page-btn"
           style={{
-            width: "200px",
-            height: "3rem",
+            width: "300px",
+            height: "4rem",
             textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+            fontSize: "1.5rem",
+            color: "white",
+            backgroundColor: "#eeb45b",
           }}
         >
           Learn More

@@ -7,6 +7,7 @@ import backgroundOne from "./../../images/daycare.jpg";
 import backgroundTwo from "./../../images/daycare2.jpg";
 import backgroundThree from "./../../images/daycare3.jpg";
 import chicken from "./../../images/79634-cute-dancing-chicken.json";
+import cat from "./../../images/93682-cat-happy.json";
 import "react-medium-image-zoom/dist/styles.css";
 import "./imageGallery.style.css";
 
@@ -14,10 +15,10 @@ const ImageGallery = () => {
   return (
     <div className="gallery-container">
       <Player
-        src={chicken}
+        src={cat}
         loop
         autoplay
-        style={{ height: "300px", width: "300px" }}
+        style={{ height: "200px", width: "200px" }}
         className="lottie-gallery-top"
       />
       <ImageList

@@ -1,18 +1,21 @@
-import CallRequest from "./callRequest/CallRequest.jsx";
+import React from "react";
+import NanniesCard from "./nanniesCard/NanniesCard";
 import MainPage from "./components/mainPage/MainPage";
 import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import ImageGallery from "./components/imageGallery/ImageGallery";
 import DaycareActiv from "./components/daycare-activ/DaycareActiv";
 import GoogleMapsDirections from "./components/googleMapsDirections/GoogleMapsDirections";
-import NanniesCard from "./components/nanniesCard/NanniesCard.jsx";
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import theme from "./theme";
 import "./App.css";
 import AgeGroup from "./components/ageGroup/AgeGroup";
 
-
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Navigation />
       <MainPage />
       <DaycareActiv />
       <Navigation />
@@ -25,7 +28,7 @@ function App() {
       <CallRequest />
 
       <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 
