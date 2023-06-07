@@ -7,6 +7,7 @@ import DaycareActiv from "./components/daycare-activ/DaycareActiv";
 import GoogleMapsDirections from "./components/googleMapsDirections/GoogleMapsDirections";
 import NanniesCard from "./components/nanniesCard/NanniesCard.jsx";
 import "./App.css";
+import AgeGroup from "./components/ageGroup/AgeGroup";
 
 function App() {
   return (
@@ -15,9 +16,13 @@ function App() {
       <DaycareActiv />
       <Navigation />
       <ImageGallery />
+
+      <AgeGroup />
+
       <NanniesCard />
       <GoogleMapsDirections />
       <CallRequest />
+
       <Footer />
     </div>
   );
