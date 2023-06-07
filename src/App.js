@@ -5,18 +5,21 @@ import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import ImageGallery from "./components/imageGallery/ImageGallery";
 import GoogleMapsDirections from "./components/googleMapsDirections/GoogleMapsDirections";
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import theme from "./theme";
 import "./App.css";
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Navigation />
       <MainPage />
       <NanniesCard />
       <ImageGallery />
       <GoogleMapsDirections />
       <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 

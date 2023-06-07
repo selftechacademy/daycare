@@ -5,10 +5,10 @@ import "./nanniesCard.style.css";
 
 const NanniesCard = () => {
   return (
-    <>
+    <div className="nanny-cards-container">
       <h1>Meet Your Dedicated Nannies!</h1>
       <div className="nanny-list">
-        <div className="nanny-card">
+        <div className="nanny-card nanny-one">
           <div className="images">
             <img src={nanny1} alt="nanny1"></img>
             {/* <img src={nanny2}></img> */}
@@ -23,7 +23,7 @@ const NanniesCard = () => {
             </p>
           </div>
         </div>
-        <div className="nanny-card">
+        <div className="nanny-card nanny-two">
           <div className="images">
             <img src={nanny2} alt="nanny2"></img>
             {/* <img src={nanny2}></img> */}
@@ -38,7 +38,7 @@ const NanniesCard = () => {
             </p>
           </div>
         </div>
-        <div className="nanny-card">
+        <div className="nanny-card nanny-three">
           <div className="images">
             <img src={nanny1} alt="nanny3"></img>
             {/* <img src={nanny2}></img> */}
@@ -53,7 +53,7 @@ const NanniesCard = () => {
             </p>
           </div>
         </div>
-        <div className="nanny-card">
+        <div className="nanny-card nanny-four">
           <div className="images">
             <img src={nanny2} alt="nanny4"></img>
             {/* <img src={nanny2}></img> */}
@@ -69,7 +69,7 @@ const NanniesCard = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

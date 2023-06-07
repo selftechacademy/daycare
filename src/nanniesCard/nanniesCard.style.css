@@ -6,7 +6,7 @@
 h1 {
   text-align: center;
   margin-top: 10px;
-  font-size: 40px;
+  font-size: 3rem;
   font-family: "Indie Flower", cursive;
 }
 .nanny-list {
@@ -21,24 +21,58 @@ h1 {
   align-items: center;
   width: 30%;
   height: 420px;
-  background-color: #73e7e6;
-  border: 2px solid white;
+  background-color: #ee6c8b;
+  color: white;
   box-shadow: 9px 7px 18px 0px rgba(0, 0, 0, 0.75);
   border-radius: 15px;
   flex-wrap: nowrap;
 }
 
+.nanny-cards-container {
+  background-color: #fcfcfc;
+  padding: 50px;
+}
+
 h2 {
   text-align: center;
-  font-size: 25px;
+  font-size: 2rem;
   font-family: "Indie Flower", cursive;
 }
 
 .nanny-exp {
   text-align: center;
-  color: #d251ad;
+  color: #7e2439;
   margin-top: -5px;
   margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+.nanny-one {
+  background-color: rgb(90, 169, 214);
+}
+
+.nanny-one img {
+  box-shadow: 0 10px rgb(19, 81, 117);
+}
+
+.nanny-two {
+  background-color: #548c2f;
+}
+
+.nanny-two img {
+  box-shadow: 0 10px #104911;
+}
+
+.nanny-three {
+  background-color: #eeb45b;
+}
+
+.nanny-three img {
+  box-shadow: 0 10px #b18138;
+}
+
+.nanny-four img {
+  box-shadow: 0 10px #7e2439;
 }
 
 .nanny-card img {
@@ -49,7 +83,6 @@ h2 {
   margin-top: 5px;
   width: 210px;
   border: 2px #73e7e6;
-  box-shadow: 0 10px #f071cd;
 }
 .text {
   text-align: left;
@@ -64,8 +97,6 @@ h2 {
   }
   .nanny-card {
     flex-wrap: wrap;
-    background-color: #73e7e6;
-    border: 2px solid white;
     width: 90%;
     margin: 0 auto;
     box-shadow: 5px 7px 18px 0px rgba(0, 0, 0, 0.75);

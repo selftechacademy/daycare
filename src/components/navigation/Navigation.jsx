@@ -43,11 +43,11 @@ function Navigation(props) {
       onClick={handleDrawerToggle}
       sx={{ textAlign: "center" }}
     >
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h5" sx={{ my: 2 }}>
         DAYCARE
       </Typography>
       <Divider />
-      <List>
+      <List className="nav-list">
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
@@ -166,7 +166,7 @@ function Navigation(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box component="main" sx={{ p: 3 }}>
+      <Box sx={{ p: 0 }}>
         <Toolbar />
       </Box>
     </Box>
