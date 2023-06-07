@@ -94,6 +94,9 @@ function AgeGroup() {
                         variant="subtitle1"
                         align="center"
                         key={line}
+                        sx={{
+                          fontWeight: "bold",
+                        }}
                       >
                         {line}
                       </Typography>
@@ -105,7 +108,6 @@ function AgeGroup() {
                     fullWidth
                     variant={tier.buttonVariant}
                     sx={{
-                      border: "3px solid black",
                       color: "black",
                       fontWeight: "bold",
                       backgroundColor: `${tier.color}`,
