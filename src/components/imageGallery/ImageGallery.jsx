@@ -1,6 +1,6 @@
 import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { ThemeProvider, CssBaseline } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Zoom from "react-medium-image-zoom";

@@ -1,6 +1,7 @@
 import "./navigation.style.css";
 import * as React from "react";
 // import PropTypes from "prop-types";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import theme from "../../theme";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -57,140 +58,144 @@ function Navigation(props) {
   //   };
 
   const drawer = (
-    <Box
-      className="drawerBox"
-      onClick={handleDrawerToggle}
-      sx={{ textAlign: "center" }}
-    >
-      <Typography variant="h5" sx={{ my: 2 }}>
-        DAYCARE
-      </Typography>
-      <Divider />
-      <List className="nav-list">
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
+    <ThemeProvider theme={theme}>
+      <Box
+        className="drawerBox"
+        onClick={handleDrawerToggle}
+        sx={{ textAlign: "center" }}
+      >
+        <Typography variant="h5" sx={{ my: 2 }}>
+          DAYCARE
+        </Typography>
+        <Divider />
+        <List className="nav-list">
+          {navItems.map((item) => (
+            <ListItem key={item} disablePadding>
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <ListItemText primary={item} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+      </Box>
+    </ThemeProvider>
   );
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <HideOnScroll {...props}>
-        <AppBar component="nav">
-          <Toolbar className="tlbar">
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="end"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <a target="_blank" href="tel:+17737637872">
+    <ThemeProvider theme={theme}>
+      <Box sx={{ display: "flex" }}>
+        <CssBaseline />
+        <HideOnScroll {...props}>
+          <AppBar component="nav">
+            <Toolbar className="tlbar">
               <IconButton
-                size="large"
-                aria-label="call us"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
                 color="inherit"
-                sx={{ mr: 1, display: { sm: "none" } }}
+                aria-label="open drawer"
+                edge="end"
+                onClick={handleDrawerToggle}
+                sx={{ mr: 2, display: { sm: "none" } }}
               >
-                <CallIcon />
+                <MenuIcon />
               </IconButton>
-            </a>
-            <a
-              target="_blank"
-              href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
-            >
-              <IconButton
-                size="large"
-                aria-label="our location"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                color="inherit"
-                sx={{ mr: 1, display: { sm: "none" } }}
-              >
-                <PinDropIcon />
-              </IconButton>
-            </a>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, display: { sm: "block" } }}
-            >
-              DAYCARE
-            </Typography>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#fff" }}>
-                  {item}
-                </Button>
-              ))}
+              <a target="_blank" href="tel:+17737637872">
+                <IconButton
+                  size="large"
+                  aria-label="call us"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  color="inherit"
+                  sx={{ mr: 1, display: { sm: "none" } }}
+                >
+                  <CallIcon />
+                </IconButton>
+              </a>
               <a
                 target="_blank"
                 href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
               >
                 <IconButton
-                  size="medium"
+                  size="large"
                   aria-label="our location"
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
                   color="inherit"
-                  sx={{ mr: 1, display: { sm: "inline" } }}
+                  sx={{ mr: 1, display: { sm: "none" } }}
                 >
                   <PinDropIcon />
                 </IconButton>
               </a>
-              <a target="_blank" href="tel:+17737637872">
-                <IconButton
-                  size="medium"
-                  aria-label="call us"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  color="inherit"
-                  sx={{ mr: 1, display: { sm: "inline" } }}
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ flexGrow: 1, display: { sm: "block" } }}
+              >
+                DAYCARE
+              </Typography>
+              <Box sx={{ display: { xs: "none", sm: "block" } }}>
+                {navItems.map((item) => (
+                  <Button key={item} sx={{ color: "#fff" }}>
+                    {item}
+                  </Button>
+                ))}
+                <a
+                  target="_blank"
+                  href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
                 >
-                  <CallIcon />
-                </IconButton>
-              </a>
-            </Box>
-          </Toolbar>
-        </AppBar>
-      </HideOnScroll>
-      <Box component="nav">
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer>
+                  <IconButton
+                    size="medium"
+                    aria-label="our location"
+                    aria-controls="menu-appbar"
+                    aria-haspopup="true"
+                    color="inherit"
+                    sx={{ mr: 1, display: { sm: "inline" } }}
+                  >
+                    <PinDropIcon />
+                  </IconButton>
+                </a>
+                <a target="_blank" href="tel:+17737637872">
+                  <IconButton
+                    size="medium"
+                    aria-label="call us"
+                    aria-controls="menu-appbar"
+                    aria-haspopup="true"
+                    color="inherit"
+                    sx={{ mr: 1, display: { sm: "inline" } }}
+                  >
+                    <CallIcon />
+                  </IconButton>
+                </a>
+              </Box>
+            </Toolbar>
+          </AppBar>
+        </HideOnScroll>
+        <Box component="nav">
+          <Drawer
+            container={container}
+            variant="temporary"
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            ModalProps={{
+              keepMounted: true, // Better open performance on mobile.
+            }}
+            sx={{
+              display: { xs: "block", sm: "none" },
+              "& .MuiDrawer-paper": {
+                boxSizing: "border-box",
+                width: drawerWidth,
+              },
+            }}
+          >
+            {drawer}
+          </Drawer>
+        </Box>
+        <Box sx={{ p: 0 }}>
+          <Toolbar />
+        </Box>
       </Box>
-      <Box sx={{ p: 0 }}>
-        <Toolbar />
-      </Box>
-    </Box>
+    </ThemeProvider>
   );
 }
 

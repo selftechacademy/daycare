@@ -25,6 +25,7 @@ const GoogleMapsDirections = () => {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               className="google-map-directions"
+              title="google maps directions"
             ></iframe>
           </div>
         </div>
