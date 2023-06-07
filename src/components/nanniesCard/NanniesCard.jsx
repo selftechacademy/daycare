@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import nanny1 from "../images/nanny1.jpg";
-import nanny2 from "../images/nanny2.jpg";
+import nanny1 from "../../images/nanny1.jpg";
+import nanny2 from "../../images/nanny2.jpg";
 import "./nanniesCard.style.css";
 
 const NanniesCard = () => {

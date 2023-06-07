@@ -17,9 +17,27 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CallIcon from "@mui/icons-material/Call";
 import PinDropIcon from "@mui/icons-material/PinDrop";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Slide from "@mui/material/Slide";
 
 const drawerWidth = 240;
 const navItems = ["Home", "Why US", "Our Nannies", "Reviews", "Contact", "FAQ"];
+
+function HideOnScroll(props) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+  });
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
 
 function Navigation(props) {
   const { window } = props;
@@ -65,87 +83,89 @@ function Navigation(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar className="tlbar">
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <a target="_blank" href="tel:+17737637872">
+      <HideOnScroll {...props}>
+        <AppBar component="nav">
+          <Toolbar className="tlbar">
             <IconButton
-              size="large"
-              aria-label="call us"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
               color="inherit"
-              sx={{ mr: 1, display: { sm: "none" } }}
+              aria-label="open drawer"
+              edge="end"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: "none" } }}
             >
-              <CallIcon />
+              <MenuIcon />
             </IconButton>
-          </a>
-          <a
-            target="_blank"
-            href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
-          >
-            <IconButton
-              size="large"
-              aria-label="our location"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              color="inherit"
-              sx={{ mr: 1, display: { sm: "none" } }}
-            >
-              <PinDropIcon />
-            </IconButton>
-          </a>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { sm: "block" } }}
-          >
-            DAYCARE
-          </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
-            ))}
+            <a target="_blank" href="tel:+17737637872">
+              <IconButton
+                size="large"
+                aria-label="call us"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                color="inherit"
+                sx={{ mr: 1, display: { sm: "none" } }}
+              >
+                <CallIcon />
+              </IconButton>
+            </a>
             <a
               target="_blank"
               href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
             >
               <IconButton
-                size="medium"
+                size="large"
                 aria-label="our location"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 color="inherit"
-                sx={{ mr: 1, display: { sm: "inline" } }}
+                sx={{ mr: 1, display: { sm: "none" } }}
               >
                 <PinDropIcon />
               </IconButton>
             </a>
-            <a target="_blank" href="tel:+17737637872">
-              <IconButton
-                size="medium"
-                aria-label="call us"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                color="inherit"
-                sx={{ mr: 1, display: { sm: "inline" } }}
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1, display: { sm: "block" } }}
+            >
+              DAYCARE
+            </Typography>
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              {navItems.map((item) => (
+                <Button key={item} sx={{ color: "#fff" }}>
+                  {item}
+                </Button>
+              ))}
+              <a
+                target="_blank"
+                href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
               >
-                <CallIcon />
-              </IconButton>
-            </a>
-          </Box>
-        </Toolbar>
-      </AppBar>
+                <IconButton
+                  size="medium"
+                  aria-label="our location"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  color="inherit"
+                  sx={{ mr: 1, display: { sm: "inline" } }}
+                >
+                  <PinDropIcon />
+                </IconButton>
+              </a>
+              <a target="_blank" href="tel:+17737637872">
+                <IconButton
+                  size="medium"
+                  aria-label="call us"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  color="inherit"
+                  sx={{ mr: 1, display: { sm: "inline" } }}
+                >
+                  <CallIcon />
+                </IconButton>
+              </a>
+            </Box>
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
       <Box component="nav">
         <Drawer
           container={container}
