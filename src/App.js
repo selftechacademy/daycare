@@ -1,5 +1,5 @@
 import React from "react";
-import NanniesCard from "./nanniesCard/NanniesCard";
+import NanniesCard from "./components/nanniesCard/NanniesCard";
 import MainPage from "./components/mainPage/MainPage";
 import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
@@ -10,6 +10,7 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import theme from "./theme";
 import "./App.css";
 import AgeGroup from "./components/ageGroup/AgeGroup";
+import CallRequest from "./components/callRequest/CallRequest";
 
 function App() {
   return (
@@ -20,13 +21,10 @@ function App() {
       <DaycareActiv />
       <Navigation />
       <ImageGallery />
-
       <AgeGroup />
-
       <NanniesCard />
       <GoogleMapsDirections />
       <CallRequest />
-
       <Footer />
     </ThemeProvider>
   );
