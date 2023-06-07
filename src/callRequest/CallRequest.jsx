@@ -15,15 +15,6 @@ const defaultSendedMessage = {
 const SignUpForm = () => {
   const [sendedMessage, setSendedMessage] = useState(defaultSendedMessage);
 
-  const onClickHandler = (e) => {
-    console.log(sendedMessage);
-  };
-
-  const onSubmitHandler = (e) => {
-    e.preventDefault();
-      console.log(sendedMessage);
-    }
-
 const onChangeHandler = (e) => {
     const { name, value } = e.target;
     setSendedMessage((prevMessage) => ({
@@ -35,8 +26,7 @@ const onChangeHandler = (e) => {
     return (
       <div className="request-container">
         <form
-          action="mailto:mura.usa11@gmail.com"
-          onSubmit={onSubmitHandler}
+          action="https://formsubmit.co/mura.usa11@gmail.com"
           className="request-form"
           method="POST"
         >
