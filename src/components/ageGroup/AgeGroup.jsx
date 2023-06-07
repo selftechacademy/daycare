@@ -18,7 +18,6 @@ import { backdropClasses } from "@mui/material";
 
 const defaultTheme = createTheme();
 
-const redColor = "FFB84C";
 function AgeGroup() {
   return (
     <ThemeProvider theme={defaultTheme}>
