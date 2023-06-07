@@ -19,7 +19,7 @@ const WhyUsSection = () => {
         <div className="item item1">
           <img src={penguin} alt="" width="40px" height="40px" />
           <h3 className="items-text-main"> State-of-The-Art-Facilities</h3>
-          <p className="items-text">
+          <p className="items-text1">
             Helen Lusys classrooms feature the best amenities. From the
             materials we use to construct our centers to childrens furniture
             toys and supplies our centers cut zero corners
@@ -28,7 +28,7 @@ const WhyUsSection = () => {
         <div className="item item2">
           <img src={jellyfish} alt="" width="40px" height="40px" />
           <h3 className="items-text-main"> Community-Based Care </h3>
-          <p className="items-text">
+          <p className="items-text2">
             As a family-owned business, Helen Lusy believes that every Helen’s
             Lusy Center is an extension of family.
           </p>
@@ -36,7 +36,7 @@ const WhyUsSection = () => {
         <div className="item item3">
           <img src={elephant} alt="" width="40px" height="40px" />
           <h3 className="items-text">Our Team</h3>
-          <p className="items-text">
+          <p className="items-text3">
             From our directors and teachers, to teachers aides, we employ staff
             that are specialized in early childhood education, with a passion
             for education.
@@ -46,8 +46,8 @@ const WhyUsSection = () => {
           {/* <img src={} alt="" width="30px" height="30px" /> */}
           <img src={tiger} alt="" width="40px" height="40px" />
           <h3 className="items-text">Children’s Land Difference</h3>
-          <p className="items-text">
-            Fresh, organic foods, catered daily State of the art facilities Fine
+          <p className="items-text4">
+            Fresh, organic foods,catered daily State of the art facilities Fine
             arts classes led by specialists Them atic Units with increasing
             exposure to STEAM activities
           </p>
