@@ -6,7 +6,7 @@ import ImageGallery from "./components/imageGallery/ImageGallery";
 import DaycareActiv from "./components/daycare-activ/DaycareActiv";
 import GoogleMapsDirections from "./components/googleMapsDirections/GoogleMapsDirections";
 import NanniesCard from "./components/nanniesCard/NanniesCard.jsx";
-import "./app.css";
+import "./App.css";
 
 function App() {
   return (
