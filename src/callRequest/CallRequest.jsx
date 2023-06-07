@@ -6,15 +6,18 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import Kid from "../images/55166-flying-boy.json";
 
 const defaultSendedMessage = {
-    name: "",
-    lastName: "",
-    email: "",
-    message: "",
-}
+  name: "",
+  lastName: "",
+  email: "",
+  message: "",
+};
 
 const SignUpForm = () => {
+  const [sendedMessage, setSendedMessage] = useState(defaultSendedMessage);
 
-    const [sendedMessage, setSendedMessage] = useState(defaultSendedMessage);
+  const onClickHandler = (e) => {
+    console.log(sendedMessage);
+  };
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
@@ -24,10 +27,10 @@ const SignUpForm = () => {
 const onChangeHandler = (e) => {
     const { name, value } = e.target;
     setSendedMessage((prevMessage) => ({
-        ...prevMessage,
-        [name]: value,
+      ...prevMessage,
+      [name]: value,
     }));
-    }
+  };
 
     return (
       <div className="request-container">
@@ -140,7 +143,7 @@ const onChangeHandler = (e) => {
           </Button>
         </form>
       </div>
-    );
-}
+  );
+};
 
-export default SignUpForm;  
+export default SignUpForm;
