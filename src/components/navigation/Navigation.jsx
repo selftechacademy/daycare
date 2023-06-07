@@ -1,6 +1,7 @@
 import "./navigation.style.css";
 import * as React from "react";
 // import PropTypes from "prop-types";
+import theme from "../../theme";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";

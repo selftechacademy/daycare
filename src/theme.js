@@ -8,23 +8,33 @@ const theme = createTheme({
       contrastText: "rgba(255,255,255,0.87)",
     },
     secondary: {
-      main: "#E84045",
+      main: "#eeb45b",
+    },
+    background: {
+      default: "#ffffff",
     },
   },
   typography: {
     fontFamily: "Roboto",
+    h1: {
+      fontFamily: "Indie Flower",
+    },
   },
   components: {
     MuiCssBaseline: {
       styleOverrides: {
         h1: {
           fontFamily: "Indie Flower",
+          fontSize: "3rem",
+          textAlign: "center",
         },
         h2: {
           fontFamily: "Indie Flower",
+          fontSize: "2rem",
         },
         p: {
           fontFamily: "Roboto",
+          fontSize: "1.2rem",
         },
       },
     },
