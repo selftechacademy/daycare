@@ -16,7 +16,8 @@ const SignUpForm = () => {
 
     const [sendedMessage, setSendedMessage] = useState(defaultSendedMessage);
 
-  const onSubmitHandler = () => {
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
       console.log(sendedMessage);
     }
 
@@ -30,7 +31,12 @@ const onChangeHandler = (e) => {
 
     return (
       <div className="request-container">
-        <form className="request-form">
+        <form
+          action="mailto:mura.usa11@gmail.com"
+          onSubmit={onSubmitHandler}
+          className="request-form"
+          method="POST"
+        >
           <h1 className="request-text">
             Ask your question
             <Player
@@ -88,8 +94,10 @@ const onChangeHandler = (e) => {
             }}
             name="email"
             label="Email"
+            type="email"
             color="primary"
             focused
+            required
             placeholder="john123@gmail.com"
             onChange={onChangeHandler}
             value={sendedMessage.email}
@@ -114,6 +122,7 @@ const onChangeHandler = (e) => {
             value={sendedMessage.message}
           />
           <Button
+            type="submit"
             sx={{
               marginBottom: "25px",
               fontSize: "2rem",
@@ -126,7 +135,6 @@ const onChangeHandler = (e) => {
               },
             }}
             variant="contained"
-            onSubmit={onSubmitHandler}
           >
             Send
           </Button>
