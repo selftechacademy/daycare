@@ -8,7 +8,10 @@ import "./googleMapsDirections.style.css";
 const GoogleMapsDirections = () => {
   return (
     <ThemeProvider theme={theme}>
-      <div className="google-directions-bg">
+      <div
+        className="google-directions-bg"
+        style={{ background: theme.palette.primary.main }}
+      >
         <div className="google-directions-container">
           <h1>Your neighbourhood's best daycare</h1>
           <div className="google-directions-box">

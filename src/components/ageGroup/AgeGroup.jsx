@@ -47,7 +47,7 @@ function AgeGroup() {
           Infant to School Age Programs
         </Typography>
         <Typography
-          variant="h5"
+          variant="p"
           align="center"
           color="text.secondary"
           component="p"
@@ -78,6 +78,7 @@ function AgeGroup() {
                   sx={{
                     backgroundColor: `${tier.color}`,
                     color: "white",
+                    textShadow: "1px 2px 2px rgba(0, 0, 0, 0.6)",
                   }}
                 />
                 <CardContent>
@@ -98,9 +99,11 @@ function AgeGroup() {
                         variant="subtitle1"
                         align="center"
                         key={line}
-                        sx={{
-                          fontWeight: "bold",
-                        }}
+                        sx={
+                          {
+                            // fontWeight: "bold",
+                          }
+                        }
                       >
                         {line}
                       </Typography>
@@ -112,9 +115,10 @@ function AgeGroup() {
                     fullWidth
                     variant={tier.buttonVariant}
                     sx={{
-                      color: "black",
+                      color: "white",
                       fontWeight: "bold",
                       backgroundColor: `${tier.color}`,
+                      textShadow: "1px 2px 2px rgba(0, 0, 0, 0.6)",
                     }}
                   >
                     {tier.buttonText}

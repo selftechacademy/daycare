@@ -13,11 +13,21 @@ const theme = createTheme({
     background: {
       default: "#ffffff",
     },
+    card: {
+      first: "#00bbf9",
+      second: "#548c2f",
+      third: "#eeb45b",
+      fourth: "#f15bb5",
+    },
   },
   typography: {
     fontFamily: "Roboto",
     h1: {
       fontFamily: "Indie Flower",
+    },
+    p: {
+      fontFamily: "Roboto",
+      fontSize: "1.2rem",
     },
   },
   components: {
