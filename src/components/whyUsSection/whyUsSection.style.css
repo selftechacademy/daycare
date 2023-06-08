@@ -12,11 +12,12 @@ body {
   display: grid;
   grid-template-columns: 3fr 4fr;
   /* background-color: rgba(156, 166, 239, 0.177); */
-  height: 100vh;
+  height: 80vh;
   padding: 20px;
   align-items: baseline;
   align-content: stretch;
   background-image: url("//images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/9e0a28834a3c58f8ae5852fe/Untitled-2.jpg");
+  background-position: left;
 }
 
 .info-container {
@@ -54,39 +55,22 @@ h3 {
 h4 {
   color: green;
 }
-.animal {
-  width: 100px; /* Adjust the size of the animal */
-  height: 100px;
-  background-image: url("https://stock.adobe.com/images/paw-print-isolated-on-white/137774495"); /* Replace 'animal.png' with your image */
-  background-size: cover;
-  animation-name: walk;
-  animation-duration: 1s;
-  animation-timing-function: steps(4);
-  animation-iteration-count: infinite;
-}
-
-@keyframes walk {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -400px 0; /* Adjust the distance according to the size of your image */
-  }
-}
 
 @media screen and (max-width: 700px) {
   .container {
-    border: 10px dashed black;
     grid-template-columns: 1fr;
     margin-bottom: 10px;
+    height: fit-content;
+    background-color: rgb(255 145 0);
+    background-image: none;
+  }
+  .item {
+    flex-basis: 100%;
   }
   .items-text {
     color: green;
   }
 
-  .items-text3 {
-    color: rgb(36, 125, 184);
-  }
   .header-text {
     margin-top: -80px;
   }
