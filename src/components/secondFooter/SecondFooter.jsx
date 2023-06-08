@@ -2,6 +2,8 @@ import React from "react";
 import "./secondFooter.style.css";
 
 function SecondFooter() {
+  const currentYear = new Date();
+
   return (
     <footer className="new_footer_area bg_color">
       <div className="new_footer_top">
@@ -28,7 +30,7 @@ function SecondFooter() {
                   animationName: "fadeInLeft",
                 }}
               >
-                <h3 className="f-title f_600 t_color f_size_18">Download</h3>
+                <h3 className="f-title f_600 t_color f_size_18">About</h3>
                 <p>
                   {" "}
                   Helen Lucy Child Care Center provides caring and dedicated
@@ -106,7 +108,8 @@ function SecondFooter() {
           <div className="row align-items-center">
             <div className="col-lg-6 col-sm-7">
               <p className="mb-0 f_400">
-                © cakecounter Inc.. 2019 All rights reserved.
+                {`Copyright  © ${currentYear.getFullYear()} All Rights Reserved by`}
+                <a href="#footer"> Helen Lucy Child Care</a>.
               </p>
             </div>
             <div className="col-lg-6 col-sm-5 text-right"></div>
