@@ -10,6 +10,9 @@ const theme = createTheme({
     secondary: {
       main: "#eeb45b",
     },
+    accent: {
+      main: "#e63946",
+    },
     background: {
       default: "#ffffff",
     },

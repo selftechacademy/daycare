@@ -117,7 +117,7 @@ function AgeGroup() {
                     sx={{
                       color: "white",
                       fontWeight: "bold",
-                      backgroundColor: `${tier.color}`,
+                      backgroundColor: theme.palette.accent.main,
                       textShadow: "1px 2px 2px rgba(0, 0, 0, 0.6)",
                     }}
                   >

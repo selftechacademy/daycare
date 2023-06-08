@@ -24,7 +24,12 @@ const NanniesCard = () => {
             </div>
             <div className="text">
               <h2>Kate Li</h2>
-              <p className="nanny-exp">5 years of experience</p>
+              <p
+                className="nanny-exp"
+                style={{ color: theme.palette.accent.main }}
+              >
+                5 years of experience
+              </p>
               <p className="nanny-desc">
                 Hello, everyone! My name is Kate, and I am thrilled to introduce
                 myself as a nanny.I consider it a privilege to have the
@@ -42,7 +47,12 @@ const NanniesCard = () => {
             </div>
             <div className="text">
               <h2>Kate Li</h2>
-              <p className="nanny-exp">5 years of experience</p>
+              <p
+                className="nanny-exp"
+                style={{ color: theme.palette.accent.main }}
+              >
+                5 years of experience
+              </p>
               <p className="nanny-desc">
                 Hello, everyone! My name is Kate, and I am thrilled to introduce
                 myself as a nanny. I consider it a privilege to have the
@@ -60,7 +70,12 @@ const NanniesCard = () => {
             </div>
             <div className="text">
               <h2>Kate Li</h2>
-              <p className="nanny-exp">5 years of experience</p>
+              <p
+                className="nanny-exp"
+                style={{ color: theme.palette.accent.main }}
+              >
+                5 years of experience
+              </p>
               <p className="nanny-desc">
                 Hello, everyone! My name is Kate, and I am thrilled to introduce
                 myself as a nanny. I consider it a privilege to have the
@@ -78,7 +93,12 @@ const NanniesCard = () => {
             </div>
             <div className="text">
               <h2>Kate Li</h2>
-              <p className="nanny-exp">5 years of experience</p>
+              <p
+                className="nanny-exp"
+                style={{ color: theme.palette.accent.main }}
+              >
+                5 years of experience
+              </p>
               <p className="nanny-desc">
                 Hello, everyone! My name is Kate, and I am thrilled to introduce
                 myself as a nanny. I consider it a privilege to have the
