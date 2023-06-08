@@ -52,25 +52,25 @@ function SecondFooter() {
                   animationName: "fadeInLeft",
                 }}
               >
-                <h3 className="f-title f_600 t_color f_size_18">Help</h3>
+                <h3 className="f-title f_600 t_color f_size_18">QUICK LINKS</h3>
                 <ul className="list-unstyled f_list">
                   <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Why Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Nannies</a>
+                  </li>
+                  <li>
+                    <a href="#">Reviews</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
                     <a href="#">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="#">Term &amp; conditions</a>
-                  </li>
-                  <li>
-                    <a href="#">Reporting</a>
-                  </li>
-                  <li>
-                    <a href="#">Documentation</a>
-                  </li>
-                  <li>
-                    <a href="#">Support Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Privacy</a>
                   </li>
                 </ul>
               </div>
@@ -108,8 +108,8 @@ function SecondFooter() {
           <div className="row align-items-center">
             <div className="col-lg-6 col-sm-7">
               <p className="mb-0 f_400">
-                {`Copyright  © ${currentYear.getFullYear()} All Rights Reserved by`}
-                <a href="#footer"> Helen Lucy Child Care</a>.
+                {`Copyright  © ${currentYear.getFullYear()} All Rights Reserved by Helen Lucy Child Care`}
+                .
               </p>
             </div>
             <div className="col-lg-6 col-sm-5 text-right"></div>

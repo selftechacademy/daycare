@@ -100,6 +100,9 @@ button:focus {
   content: "\e731";
 }
 
+.linkFooter {
+  color: #263b5e;
+}
 .btn_get_two {
   -webkit-box-shadow: none;
   box-shadow: none;
