@@ -85,9 +85,6 @@ function SecondFooter() {
                   animationName: "fadeInLeft",
                 }}
               >
-                <h3 className="f-title f_600 t_color f_size_18">
-                  Team Solutions
-                </h3>
                 <div className="f_social_icon">
                   <a href="#" className="fab fa-facebook"></a>
                   <a href="#" className="fab fa-twitter"></a>

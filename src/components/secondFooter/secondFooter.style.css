@@ -1,15 +1,15 @@
 .new_footer_area {
-  background: #fbfbfd;
+  background: #ffffff;
 }
 
 .new_footer_top {
-  padding: 120px 0px 270px;
+  padding: 0px 0px 250px;
   position: relative;
   overflow-x: hidden;
 }
 .new_footer_area .footer_bottom {
   padding-top: 5px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .footer_bottom {
   font-size: 14px;
@@ -206,4 +206,11 @@ h6 {
   100% {
     left: 100%;
   }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
