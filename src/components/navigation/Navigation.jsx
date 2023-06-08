@@ -100,7 +100,7 @@ function Navigation(props) {
               >
                 <MenuIcon />
               </IconButton>
-              <a target="_blank" href="tel:+17737637872">
+              <a target="_blank" href="tel:+17737637872" rel="noreferrer">
                 <IconButton
                   size="large"
                   aria-label="call us"
@@ -115,6 +115,7 @@ function Navigation(props) {
               <a
                 target="_blank"
                 href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
+                rel="noreferrer"
               >
                 <IconButton
                   size="large"
@@ -143,6 +144,7 @@ function Navigation(props) {
                 <a
                   target="_blank"
                   href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
+                  rel="noreferrer"
                 >
                   <IconButton
                     size="medium"
@@ -155,7 +157,7 @@ function Navigation(props) {
                     <PinDropIcon />
                   </IconButton>
                 </a>
-                <a target="_blank" href="tel:+17737637872">
+                <a target="_blank" href="tel:+17737637872" rel="noreferrer">
                   <IconButton
                     size="medium"
                     aria-label="call us"

@@ -14,8 +14,6 @@ import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import { tiers } from "./Tiers";
 import theme from "../../theme";
-import { fontWeight } from "@mui/system";
-import { backdropClasses } from "@mui/material";
 
 const defaultTheme = createTheme();
 
