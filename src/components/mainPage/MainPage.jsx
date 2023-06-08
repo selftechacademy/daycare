@@ -6,6 +6,7 @@ import backgroundFour from "./../../images/cdc-8LITuYkZRIo-unsplash.jpg";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
+import theme from "../../theme";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -71,7 +72,7 @@ const MainPage = () => {
             textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             fontSize: "1.5rem",
             color: "white",
-            backgroundColor: "#eeb45b",
+            backgroundColor: theme.palette.secondary.main,
           }}
         >
           Learn More

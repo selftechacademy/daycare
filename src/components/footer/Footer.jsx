@@ -1,3 +1,4 @@
+import theme from "../../theme";
 import "./footer.style.css";
 
 import React from "react";
@@ -7,7 +8,10 @@ function Footer() {
 
   return (
     <>
-      <footer class="mainContainer">
+      <footer
+        class="mainContainer"
+        style={{ backgroundColor: theme.palette.primary.main }}
+      >
         <div class="containerFooter">
           <div class="row">
             <div class="aboutContainer">
