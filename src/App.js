@@ -2,7 +2,7 @@ import React from "react";
 import NanniesCard from "./components/nanniesCard/NanniesCard";
 import MainPage from "./components/mainPage/MainPage";
 import Navigation from "./components/navigation/Navigation";
-import Footer from "./components/footer/Footer";
+// import Footer from "./components/footer/Footer";
 import ImageGallery from "./components/imageGallery/ImageGallery";
 import DaycareActiv from "./components/daycare-activ/DaycareActiv";
 import GoogleMapsDirections from "./components/googleMapsDirections/GoogleMapsDirections";
@@ -26,7 +26,7 @@ function App() {
       <NanniesCard />
       <GoogleMapsDirections />
       <CallRequest />
-      <Footer />
+      {/* <Footer /> */}
       <SecondFooter />
     </ThemeProvider>
   );

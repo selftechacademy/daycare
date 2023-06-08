@@ -214,3 +214,7 @@ h6 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.socialLinks {
+  align-self: flex-end;
+}

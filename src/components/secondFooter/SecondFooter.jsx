@@ -75,7 +75,7 @@ function SecondFooter() {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6 socialLinks">
               <div
                 className="f_widget social-widget pl_70 wow fadeInLeft"
                 data-wow-delay="0.8s"
