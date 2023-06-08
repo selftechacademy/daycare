@@ -11,6 +11,7 @@ import theme from "./theme";
 import "./App.css";
 import AgeGroup from "./components/ageGroup/AgeGroup";
 import CallRequest from "./components/callRequest/CallRequest";
+import SecondFooter from "./components/secondFooter/SecondFooter";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <GoogleMapsDirections />
       <CallRequest />
       <Footer />
+      <SecondFooter />
     </ThemeProvider>
   );
 }
