@@ -115,7 +115,7 @@ function Navigation(props) {
               >
                 <MenuIcon />
               </IconButton>
-              <a target="#contact" href="#contact" rel="noreferrer">
+              <a target="_blank" href="tel:+17737637872" rel="noreferrer">
                 <IconButton
                   size="large"
                   aria-label="call us"
