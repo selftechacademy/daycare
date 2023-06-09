@@ -69,7 +69,11 @@ function Navigation(props) {
           color: theme.palette.primary.main,
         }}
       >
-        <Typography variant="h5" sx={{ my: 2 }}>
+        <Typography
+          variant="h5"
+          sx={{ my: 2 }}
+          style={{ color: theme.palette.primary.main }}
+        >
           DAYCARE
         </Typography>
         <Divider />
@@ -127,10 +131,13 @@ function Navigation(props) {
                   <CallIcon />
                 </IconButton>
               </a>
-              <a
-                target="_blank"
-                href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
-                rel="noreferrer"
+              <Link
+                activeClass="active"
+                to={"google-directions"}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
               >
                 <IconButton
                   size="large"
@@ -142,7 +149,7 @@ function Navigation(props) {
                 >
                   <PinDropIcon />
                 </IconButton>
-              </a>
+              </Link>
               <Typography
                 variant="h6"
                 component="div"
@@ -165,10 +172,13 @@ function Navigation(props) {
                     </Button>
                   </Link>
                 ))}
-                <a
-                  target="_blank"
-                  href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
-                  rel="noreferrer"
+                <Link
+                  activeClass="active"
+                  to={"google-directions"}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                 >
                   <IconButton
                     size="medium"
@@ -180,7 +190,7 @@ function Navigation(props) {
                   >
                     <PinDropIcon />
                   </IconButton>
-                </a>
+                </Link>
                 <a target="_blank" href="tel:+17737637872" rel="noreferrer">
                   <IconButton
                     size="medium"

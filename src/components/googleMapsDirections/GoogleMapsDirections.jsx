@@ -10,6 +10,7 @@ const GoogleMapsDirections = () => {
     <ThemeProvider theme={theme}>
       <div
         className="google-directions-bg"
+        id="google-directions"
         style={{ background: theme.palette.primary.main }}
       >
         <div
