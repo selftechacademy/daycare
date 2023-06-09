@@ -8,6 +8,7 @@ import GoogleMapsDirections from "./components/googleMapsDirections/GoogleMapsDi
 import NanniesCard from "./components/nanniesCard/NanniesCard.jsx";
 import "./App.css";
 import AgeGroup from "./components/ageGroup/AgeGroup";
+import FaqsFunction from "./components/faqs/FaqsFunction.jsx";
 
 
 function App() {
@@ -22,8 +23,8 @@ function App() {
 
       <NanniesCard />
       <GoogleMapsDirections />
+      <FaqsFunction />
       <CallRequest />
-
       <Footer />
     </div>
   );
