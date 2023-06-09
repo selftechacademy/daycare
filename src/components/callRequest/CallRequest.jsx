@@ -38,7 +38,10 @@ const SignUpForm = () => {
         >
           <h1
             className="request-text"
-            style={{ color: theme.palette.primary.main }}
+            style={{
+              color: theme.palette.primary.main,
+              textShadow: "1px 2px 2px rgba(0, 0, 0, 0.6)",
+            }}
           >
             Ask your question
             <Player
@@ -128,6 +131,7 @@ const SignUpForm = () => {
             sx={{
               marginBottom: "25px",
               fontSize: "2rem",
+              textShadow: "1px 2px 2px rgba(0, 0, 0, 0.6)",
               width: {
                 xs: "300px",
                 sm: "250px",
