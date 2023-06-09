@@ -16,14 +16,14 @@
   font-weight: 300;
   line-height: 20px;
   color: #ffffff;
-  padding: 27px 0px;
+  padding: 15px 0px;
 }
 .new_footer_top .company_widget p {
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .new_footer_top .company_widget .f_subscribe_two .btn_get {
   border-width: 1px;
@@ -60,7 +60,7 @@ button:focus {
   margin-bottom: 0px;
 }
 .f_widget.about-widget .f_list li {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .f_widget.about-widget .f_list {
   margin-bottom: 0px;
@@ -125,7 +125,7 @@ button:focus {
   margin-left: 4px;
 }
 .new_footer_top .f-title {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #ffffff;
 }
 .f_600 {
@@ -222,6 +222,7 @@ h6 {
 
 .col-lg-3 p {
   color: #ffffff;
+  font-size: 18px;
 }
 
 .list-unstyled {

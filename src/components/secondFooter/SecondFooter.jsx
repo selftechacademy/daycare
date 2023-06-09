@@ -109,7 +109,6 @@ function SecondFooter() {
                 .
               </p>
             </div>
-            <div className="col-lg-6 col-sm-5 text-right"></div>
           </div>
         </div>
       </div>
