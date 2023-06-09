@@ -7,9 +7,11 @@ import elephant from "./assets/elephantPapa.svg";
 import steps from "./img/lf20_ZiW5Nz.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 import food from "./assets/diet.svg";
+import theme from "../../theme";
+
 const WhyUsSection = () => {
   return (
-    <div className="container">
+    <div className="container" id="why-us">
       <div className="header">
         <h1 className="header-text">Why you should choose US?</h1>
         <h4>

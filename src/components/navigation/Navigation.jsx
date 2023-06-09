@@ -21,6 +21,7 @@ import CallIcon from "@mui/icons-material/Call";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
+import { Link } from "react-scroll";
 
 const drawerWidth = 240;
 const navItems = ["Home", "Why US", "Our Nannies", "Reviews", "Contact", "FAQ"];
@@ -63,7 +64,10 @@ function Navigation(props) {
         className="drawerBox"
         onClick={handleDrawerToggle}
         sx={{ textAlign: "center" }}
-        style={{ background: theme.palette.primary.main, color: "white" }}
+        style={{
+          background: theme.palette.background.default,
+          color: theme.palette.primary.main,
+        }}
       >
         <Typography variant="h5" sx={{ my: 2 }}>
           DAYCARE
@@ -71,11 +75,21 @@ function Navigation(props) {
         <Divider />
         <List className="nav-list">
           {navItems.map((item) => (
-            <ListItem key={item} disablePadding>
-              <ListItemButton sx={{ textAlign: "center" }}>
-                <ListItemText primary={item} />
-              </ListItemButton>
-            </ListItem>
+            <Link
+              activeClass="active"
+              to={item.toLowerCase().replace(" ", "-")}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={handleDrawerToggle}
+            >
+              <ListItem key={item} disablePadding>
+                <ListItemButton sx={{ textAlign: "center" }}>
+                  <ListItemText primary={item} />
+                </ListItemButton>
+              </ListItem>
+            </Link>
           ))}
         </List>
       </Box>
@@ -101,7 +115,7 @@ function Navigation(props) {
               >
                 <MenuIcon />
               </IconButton>
-              <a target="_blank" href="tel:+17737637872" rel="noreferrer">
+              <a target="#contact" href="#contact" rel="noreferrer">
                 <IconButton
                   size="large"
                   aria-label="call us"
@@ -138,9 +152,18 @@ function Navigation(props) {
               </Typography>
               <Box sx={{ display: { xs: "none", sm: "block" } }}>
                 {navItems.map((item) => (
-                  <Button key={item} sx={{ color: "#fff" }}>
-                    {item}
-                  </Button>
+                  <Link
+                    activeClass="active"
+                    to={item.toLowerCase().replace(" ", "-")}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    <Button key={item} sx={{ color: "#fff" }}>
+                      {item}
+                    </Button>
+                  </Link>
                 ))}
                 <a
                   target="_blank"

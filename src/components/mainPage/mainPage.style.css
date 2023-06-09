@@ -31,20 +31,20 @@
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 6rem;
   text-decoration-line: underline;
 }
 
 .main-page-list {
-  font-size: 3rem;
+  font-size: 4rem;
   list-style: none;
   padding-left: 0;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .title {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .main-page {

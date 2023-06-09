@@ -29,6 +29,7 @@ const SignUpForm = () => {
     <ThemeProvider theme={theme}>
       <div
         className="request-container"
+        id="contact"
         style={{ backgroundColor: theme.palette.background.default }}
       >
         <form
@@ -128,6 +129,7 @@ const SignUpForm = () => {
           />
           <Button
             type="submit"
+            style={{ background: theme.palette.accent.main }}
             sx={{
               marginBottom: "25px",
               fontSize: "2rem",
@@ -141,7 +143,6 @@ const SignUpForm = () => {
               },
             }}
             variant="contained"
-            color="primary"
           >
             Send
           </Button>

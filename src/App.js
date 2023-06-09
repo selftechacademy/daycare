@@ -13,7 +13,7 @@ import AgeGroup from "./components/ageGroup/AgeGroup";
 import FaqsFunction from "./components/faqs/FaqsFunction.jsx";
 
 import CallRequest from "./components/callRequest/CallRequest";
-import SecondFooter from "./components/secondFooter/SecondFooter";
+import WhyUsSection from "./components/whyUsSection/WhyUsSection";
 
 function App() {
   return (
@@ -29,8 +29,8 @@ function App() {
       <GoogleMapsDirections />
       <FaqsFunction />
       <CallRequest />
+      <WhyUsSection />
       {/* <Footer /> */}
-      <SecondFooter />
     </ThemeProvider>
   );
 }
