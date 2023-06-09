@@ -231,3 +231,12 @@ h6 {
   gap: 6px;
   font-size: 14px;
 }
+
+.col-lg-6 p {
+  font-size: 1.2rem;
+}
+
+.rowCopyright {
+  display: flex;
+  justify-content: center;
+}
