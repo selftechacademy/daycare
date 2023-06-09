@@ -105,7 +105,7 @@ function SecondFooter() {
           <div className="rowCopyright align-items-center">
             <div className="col-lg-6 col-sm-7">
               <p className="mb-0 f_400">
-                {`Copyright  © ${currentYear.getFullYear()} All Rights Reserved by Helen Lucy Child Daycare`}
+                {`Copyright  © ${currentYear.getFullYear()} All Rights Reserved by Helen Lucy Child Care Center`}
                 .
               </p>
             </div>

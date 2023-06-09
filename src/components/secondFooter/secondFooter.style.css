@@ -221,7 +221,7 @@ h6 {
 }
 
 .col-lg-3 p {
-  color: #ffffff;
+  color: #ece7e7;
   font-size: 18px;
 }
 
@@ -230,10 +230,12 @@ h6 {
   flex-direction: row;
   gap: 6px;
   font-size: 14px;
+  color: #e2e2eb;
 }
 
 .col-lg-6 p {
   font-size: 1.2rem;
+  color: #e2e2eb;
 }
 
 .rowCopyright {
