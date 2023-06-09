@@ -1,7 +1,9 @@
+import theme from "./../../theme";
+
 export const tiers = [
   {
     title: "Toddler",
-    color: "#FFB84C",
+    color: theme.palette.card.first,
     ageGroupPic: (
       <svg
         height="200pt"
@@ -100,7 +102,7 @@ export const tiers = [
   },
   {
     title: "Pre-School",
-    color: "#F266AB",
+    color: theme.palette.card.second,
     ageGroupPic: (
       <svg
         height="200pt"
@@ -235,7 +237,7 @@ export const tiers = [
   },
   {
     title: "Pre-Kindergarten",
-    color: "#A459D1",
+    color: theme.palette.card.third,
     ageGroupPic: (
       <svg
         id="Layer_4"
@@ -323,7 +325,7 @@ export const tiers = [
   },
   {
     title: "School Age",
-    color: "#2CD3E1",
+    color: theme.palette.card.fourth,
     ageGroupPic: (
       <svg
         id="Capa_1"

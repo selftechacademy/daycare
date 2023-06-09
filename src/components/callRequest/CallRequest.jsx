@@ -1,9 +1,11 @@
 import "./callRequest.style.css";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import { useState } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
-import Kid from "../images/55166-flying-boy.json";
+import Kid from "../../images/55166-flying-boy.json";
+import theme from "../../theme";
 
 const defaultSendedMessage = {
   name: "",
@@ -15,7 +17,7 @@ const defaultSendedMessage = {
 const SignUpForm = () => {
   const [sendedMessage, setSendedMessage] = useState(defaultSendedMessage);
 
-const onChangeHandler = (e) => {
+  const onChangeHandler = (e) => {
     const { name, value } = e.target;
     setSendedMessage((prevMessage) => ({
       ...prevMessage,
@@ -23,14 +25,24 @@ const onChangeHandler = (e) => {
     }));
   };
 
-    return (
-      <div className="request-container">
+  return (
+    <ThemeProvider theme={theme}>
+      <div
+        className="request-container"
+        style={{ backgroundColor: theme.palette.background.default }}
+      >
         <form
           action="https://formsubmit.co/mura.usa11@gmail.com"
           className="request-form"
           method="POST"
         >
-          <h1 className="request-text">
+          <h1
+            className="request-text"
+            style={{
+              color: theme.palette.primary.main,
+              textShadow: "1px 2px 2px rgba(0, 0, 0, 0.6)",
+            }}
+          >
             Ask your question
             <Player
               src={Kid}
@@ -119,6 +131,7 @@ const onChangeHandler = (e) => {
             sx={{
               marginBottom: "25px",
               fontSize: "2rem",
+              textShadow: "1px 2px 2px rgba(0, 0, 0, 0.6)",
               width: {
                 xs: "300px",
                 sm: "250px",
@@ -128,11 +141,13 @@ const onChangeHandler = (e) => {
               },
             }}
             variant="contained"
+            color="primary"
           >
             Send
           </Button>
         </form>
       </div>
+    </ThemeProvider>
   );
 };
 

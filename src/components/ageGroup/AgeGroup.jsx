@@ -13,12 +13,10 @@ import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import { tiers } from "./Tiers";
-import { fontWeight } from "@mui/system";
-import { backdropClasses } from "@mui/material";
+import theme from "../../theme";
 
 const defaultTheme = createTheme();
 
-const redColor = "FFB84C";
 function AgeGroup() {
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -39,11 +37,15 @@ function AgeGroup() {
           align="center"
           color="text.primary"
           gutterBottom
+          style={{
+            fontFamily: theme.typography.h1.fontFamily,
+            fontWeight: "bolder",
+          }}
         >
           Infant to School Age Programs
         </Typography>
         <Typography
-          variant="h5"
+          variant="p"
           align="center"
           color="text.secondary"
           component="p"
@@ -74,6 +76,7 @@ function AgeGroup() {
                   sx={{
                     backgroundColor: `${tier.color}`,
                     color: "white",
+                    textShadow: "1px 2px 2px rgba(0, 0, 0, 0.6)",
                   }}
                 />
                 <CardContent>
@@ -94,9 +97,11 @@ function AgeGroup() {
                         variant="subtitle1"
                         align="center"
                         key={line}
-                        sx={{
-                          fontWeight: "bold",
-                        }}
+                        sx={
+                          {
+                            // fontWeight: "bold",
+                          }
+                        }
                       >
                         {line}
                       </Typography>
@@ -108,9 +113,10 @@ function AgeGroup() {
                     fullWidth
                     variant={tier.buttonVariant}
                     sx={{
-                      color: "black",
+                      color: "white",
                       fontWeight: "bold",
-                      backgroundColor: `${tier.color}`,
+                      backgroundColor: theme.palette.accent.main,
+                      textShadow: "1px 2px 2px rgba(0, 0, 0, 0.6)",
                     }}
                   >
                     {tier.buttonText}

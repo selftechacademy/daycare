@@ -1,16 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 40px;
-  font-family: "Indie Flower", cursive;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -52,7 +39,16 @@ h3 {
     margin-left: 32px;
   }
 
+  .activities {
+    height: auto;
+    padding: 5px;
+    background-color: bisque;
+  }
+
   .text {
     font-size: 10px;
+  }
+  .activities {
+    height: fit-content;
   }
 }
