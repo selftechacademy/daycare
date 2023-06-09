@@ -1,0 +1,85 @@
+import Button from "@mui/material/Button";
+import backgroundOne from "./../../images/daycare.jpg";
+import backgroundTwo from "./../../images/daycare2.jpg";
+import backgroundThree from "./../../images/daycare3.jpg";
+import backgroundFour from "./../../images/cdc-8LITuYkZRIo-unsplash.jpg";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper";
+import theme from "../../theme";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./mainPage.style.css";
+
+const MainPage = () => {
+  return (
+    <div className="main-page-container">
+      <Swiper
+        loop={true}
+        speed={2000}
+        spaceBetween={0}
+        centeredSlides={true}
+        allowTouchMove={false}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        navigation={false}
+        modules={[Autoplay, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={backgroundOne} className="main-background" alt="children" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={backgroundTwo} className="main-background" alt="children" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={backgroundThree}
+            className="main-background"
+            alt="children"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={backgroundFour}
+            className="main-background"
+            alt="children"
+          />
+        </SwiperSlide>
+      </Swiper>
+      <div className="main-page">
+        <h1 className="title">Helen Lucy Daycare</h1>
+        <ul className="main-page-list">
+          <li className="main-list-item-one">
+            Nurturing <span className="main-list-accent">Hearts</span>,
+          </li>
+          <li className="main-list-item-two">
+            Growing <span className="main-list-accent">Minds</span>,
+          </li>
+          <li className="main-list-item-three">
+            Where <span className="main-list-accent">Children</span> Shine!
+          </li>
+        </ul>
+        <Button
+          variant="contained"
+          className="main-page-btn"
+          style={{
+            width: "300px",
+            height: "4rem",
+            textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+            fontSize: "1.5rem",
+            color: "white",
+            backgroundColor: theme.palette.secondary.main,
+          }}
+        >
+          Learn More
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default MainPage;
