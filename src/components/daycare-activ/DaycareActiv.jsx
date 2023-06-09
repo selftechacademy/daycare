@@ -14,7 +14,10 @@ const DaycareActiv = () => {
       <ThemeProvider theme={theme}>
         <div className="container">
           <h1>Daycare Activities</h1>
-          <div className="activities">
+          <div
+            className="activities"
+            style={{ background: theme.palette.secondary.main }}
+          >
             <div className="images">
               <img src={read} alt="read icon"></img>
             </div>
@@ -27,7 +30,10 @@ const DaycareActiv = () => {
             </div>
           </div>
 
-          <div className="activities">
+          <div
+            className="activities"
+            style={{ background: theme.palette.secondary.main }}
+          >
             <div className="images">
               <img src={talking} alt="talking icon"></img>
             </div>
@@ -40,7 +46,10 @@ const DaycareActiv = () => {
             </div>
           </div>
 
-          <div className="activities">
+          <div
+            className="activities"
+            style={{ background: theme.palette.secondary.main }}
+          >
             <div className="images">
               <img src={play} alt="playing icon"></img>
             </div>
@@ -53,7 +62,10 @@ const DaycareActiv = () => {
             </div>
           </div>
 
-          <div className="activities">
+          <div
+            className="activities"
+            style={{ background: theme.palette.secondary.main }}
+          >
             <div className="images">
               <img src={singing} alt="singing icon"></img>
             </div>
@@ -67,7 +79,10 @@ const DaycareActiv = () => {
             </div>
           </div>
 
-          <div className="activities">
+          <div
+            className="activities"
+            style={{ background: theme.palette.secondary.main }}
+          >
             <div className="images">
               <img src={loyalty} alt="loyalty icon"></img>
             </div>

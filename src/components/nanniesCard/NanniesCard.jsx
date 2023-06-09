@@ -12,16 +12,24 @@ const NanniesCard = () => {
         className="nanny-cards-container"
         style={{ backgroundColor: theme.palette.primary.main }}
       >
-        <h1>Meet Your Dedicated Nannies!</h1>
+        <h1 className="nanny-card-title">Meet Your Dedicated Nannies!</h1>
         <div className="nanny-list">
-          <div className="nanny-card nanny-one">
+          <div
+            className="nanny-card nanny-one"
+            style={{ background: theme.palette.card.first }}
+          >
             <div className="images">
               <img src={nanny1} alt="nanny1"></img>
               {/* <img src={nanny2}></img> */}
             </div>
             <div className="text">
               <h2>Kate Li</h2>
-              <p className="nanny-exp">5 years of experience</p>
+              <p
+                className="nanny-exp"
+                style={{ color: theme.palette.accent.main }}
+              >
+                5 years of experience
+              </p>
               <p className="nanny-desc">
                 Hello, everyone! My name is Kate, and I am thrilled to introduce
                 myself as a nanny.I consider it a privilege to have the
@@ -29,14 +37,22 @@ const NanniesCard = () => {
               </p>
             </div>
           </div>
-          <div className="nanny-card nanny-two">
+          <div
+            className="nanny-card nanny-two"
+            style={{ background: theme.palette.card.second }}
+          >
             <div className="images">
               <img src={nanny2} alt="nanny2"></img>
               {/* <img src={nanny2}></img> */}
             </div>
             <div className="text">
               <h2>Kate Li</h2>
-              <p className="nanny-exp">5 years of experience</p>
+              <p
+                className="nanny-exp"
+                style={{ color: theme.palette.accent.main }}
+              >
+                5 years of experience
+              </p>
               <p className="nanny-desc">
                 Hello, everyone! My name is Kate, and I am thrilled to introduce
                 myself as a nanny. I consider it a privilege to have the
@@ -44,14 +60,22 @@ const NanniesCard = () => {
               </p>
             </div>
           </div>
-          <div className="nanny-card nanny-three">
+          <div
+            className="nanny-card nanny-three"
+            style={{ background: theme.palette.card.third }}
+          >
             <div className="images">
               <img src={nanny1} alt="nanny3"></img>
               {/* <img src={nanny2}></img> */}
             </div>
             <div className="text">
               <h2>Kate Li</h2>
-              <p className="nanny-exp">5 years of experience</p>
+              <p
+                className="nanny-exp"
+                style={{ color: theme.palette.accent.main }}
+              >
+                5 years of experience
+              </p>
               <p className="nanny-desc">
                 Hello, everyone! My name is Kate, and I am thrilled to introduce
                 myself as a nanny. I consider it a privilege to have the
@@ -59,14 +83,22 @@ const NanniesCard = () => {
               </p>
             </div>
           </div>
-          <div className="nanny-card nanny-four">
+          <div
+            className="nanny-card nanny-four"
+            style={{ background: theme.palette.card.fourth }}
+          >
             <div className="images">
               <img src={nanny2} alt="nanny4"></img>
               {/* <img src={nanny2}></img> */}
             </div>
             <div className="text">
               <h2>Kate Li</h2>
-              <p className="nanny-exp">5 years of experience</p>
+              <p
+                className="nanny-exp"
+                style={{ color: theme.palette.accent.main }}
+              >
+                5 years of experience
+              </p>
               <p className="nanny-desc">
                 Hello, everyone! My name is Kate, and I am thrilled to introduce
                 myself as a nanny. I consider it a privilege to have the

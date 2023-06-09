@@ -63,6 +63,7 @@ function Navigation(props) {
         className="drawerBox"
         onClick={handleDrawerToggle}
         sx={{ textAlign: "center" }}
+        style={{ background: theme.palette.primary.main, color: "white" }}
       >
         <Typography variant="h5" sx={{ my: 2 }}>
           DAYCARE

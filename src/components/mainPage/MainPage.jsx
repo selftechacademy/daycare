@@ -54,13 +54,19 @@ const MainPage = () => {
         <h1 className="title">Helen Lucy Daycare</h1>
         <ul className="main-page-list">
           <li className="main-list-item-one">
-            Nurturing <span className="main-list-accent">Hearts</span>,
+            Nurturing{" "}
+            <span style={{ color: theme.palette.secondary.main }}>Hearts</span>,
           </li>
           <li className="main-list-item-two">
-            Growing <span className="main-list-accent">Minds</span>,
+            Growing{" "}
+            <span style={{ color: theme.palette.secondary.main }}>Minds</span>,
           </li>
           <li className="main-list-item-three">
-            Where <span className="main-list-accent">Children</span> Shine!
+            Where{" "}
+            <span style={{ color: theme.palette.secondary.main }}>
+              Children
+            </span>{" "}
+            Shine!
           </li>
         </ul>
         <Button
@@ -69,10 +75,10 @@ const MainPage = () => {
           style={{
             width: "300px",
             height: "4rem",
-            textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+            textShadow: "1px 2px 2px rgba(0, 0, 0, 0.6)",
             fontSize: "1.5rem",
             color: "white",
-            backgroundColor: theme.palette.secondary.main,
+            backgroundColor: theme.palette.accent.main,
           }}
         >
           Learn More
