@@ -2,11 +2,20 @@
   margin: 0 auto;
 }
 
+.img-gallery--image {
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.img-gallery::-webkit-scrollbar {
+  display: none;
+}
+
 .gallery-container {
   padding-bottom: 50px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .img-gallery {
     max-width: 100%;
   }

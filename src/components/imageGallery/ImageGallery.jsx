@@ -29,52 +29,69 @@ const ImageGallery = () => {
         />
         <ImageList
           className="img-gallery"
-          sx={{ width: 500, height: 500 }}
+          sx={{ width: 1150, height: 300 }}
+          style={{ height: "fit-content" }}
           cols={3}
-          rowHeight={164}
+          rowHeight={275}
+          gap={5}
         >
           <Zoom>
-            <ImageListItem>
+            <ImageListItem className="img-gallery--image">
               <img src={backgroundOne} alt="daycare" loading="lazy" />
             </ImageListItem>
           </Zoom>
           <Zoom>
-            <ImageListItem>
+            <ImageListItem className="img-gallery--image">
               <img src={backgroundTwo} alt="daycare" loading="lazy" />{" "}
             </ImageListItem>
           </Zoom>
           <Zoom>
-            <ImageListItem>
+            <ImageListItem className="img-gallery--image">
               <img src={backgroundThree} alt="daycare" loading="lazy" />{" "}
             </ImageListItem>
           </Zoom>
           <Zoom>
-            <ImageListItem>
+            <ImageListItem className="img-gallery--image">
               <img src={backgroundOne} alt="daycare" loading="lazy" />
             </ImageListItem>
           </Zoom>
           <Zoom>
-            <ImageListItem>
+            <ImageListItem className="img-gallery--image">
               <img src={backgroundTwo} alt="daycare" loading="lazy" />{" "}
             </ImageListItem>
           </Zoom>
           <Zoom>
-            <ImageListItem>
+            <ImageListItem className="img-gallery--image">
               <img src={backgroundThree} alt="daycare" loading="lazy" />{" "}
             </ImageListItem>
           </Zoom>
           <Zoom>
-            <ImageListItem>
+            <ImageListItem className="img-gallery--image">
               <img src={backgroundOne} alt="daycare" loading="lazy" />
             </ImageListItem>
           </Zoom>
           <Zoom>
-            <ImageListItem>
+            <ImageListItem className="img-gallery--image">
               <img src={backgroundTwo} alt="daycare" loading="lazy" />{" "}
             </ImageListItem>
           </Zoom>
           <Zoom>
-            <ImageListItem>
+            <ImageListItem className="img-gallery--image">
+              <img src={backgroundThree} alt="daycare" loading="lazy" />{" "}
+            </ImageListItem>
+          </Zoom>
+          <Zoom>
+            <ImageListItem className="img-gallery--image">
+              <img src={backgroundThree} alt="daycare" loading="lazy" />{" "}
+            </ImageListItem>
+          </Zoom>
+          <Zoom>
+            <ImageListItem className="img-gallery--image">
+              <img src={backgroundThree} alt="daycare" loading="lazy" />{" "}
+            </ImageListItem>
+          </Zoom>
+          <Zoom>
+            <ImageListItem className="img-gallery--image">
               <img src={backgroundThree} alt="daycare" loading="lazy" />{" "}
             </ImageListItem>
           </Zoom>

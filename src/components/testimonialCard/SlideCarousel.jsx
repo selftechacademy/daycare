@@ -6,7 +6,7 @@ import "react-slideshow-image/dist/styles.css";
 
 const SlideCarousel = () => {
   return (
-    <Slide autoPlay={false}>
+    <Slide autoPlay={false} id="reviews">
       {reviews.map((el, index) => {
         return (
           <div className="each-slide-effect" key={index}>

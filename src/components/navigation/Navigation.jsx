@@ -21,6 +21,7 @@ import CallIcon from "@mui/icons-material/Call";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
+import { Link } from "react-scroll";
 
 const drawerWidth = 240;
 const navItems = ["Home", "Why US", "Our Nannies", "Reviews", "Contact", "FAQ"];
@@ -63,19 +64,36 @@ function Navigation(props) {
         className="drawerBox"
         onClick={handleDrawerToggle}
         sx={{ textAlign: "center" }}
-        style={{ background: theme.palette.primary.main, color: "white" }}
+        style={{
+          background: theme.palette.background.default,
+          color: theme.palette.primary.main,
+        }}
       >
-        <Typography variant="h5" sx={{ my: 2 }}>
+        <Typography
+          variant="h5"
+          sx={{ my: 2 }}
+          style={{ color: theme.palette.primary.main }}
+        >
           DAYCARE
         </Typography>
         <Divider />
         <List className="nav-list">
           {navItems.map((item) => (
-            <ListItem key={item} disablePadding>
-              <ListItemButton sx={{ textAlign: "center" }}>
-                <ListItemText primary={item} />
-              </ListItemButton>
-            </ListItem>
+            <Link
+              activeClass="active"
+              to={item.toLowerCase().replace(" ", "-")}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={handleDrawerToggle}
+            >
+              <ListItem key={item} disablePadding>
+                <ListItemButton sx={{ textAlign: "center" }}>
+                  <ListItemText primary={item} />
+                </ListItemButton>
+              </ListItem>
+            </Link>
           ))}
         </List>
       </Box>
@@ -113,10 +131,13 @@ function Navigation(props) {
                   <CallIcon />
                 </IconButton>
               </a>
-              <a
-                target="_blank"
-                href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
-                rel="noreferrer"
+              <Link
+                activeClass="active"
+                to={"google-directions"}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
               >
                 <IconButton
                   size="large"
@@ -128,7 +149,7 @@ function Navigation(props) {
                 >
                   <PinDropIcon />
                 </IconButton>
-              </a>
+              </Link>
               <Typography
                 variant="h6"
                 component="div"
@@ -138,14 +159,26 @@ function Navigation(props) {
               </Typography>
               <Box sx={{ display: { xs: "none", sm: "block" } }}>
                 {navItems.map((item) => (
-                  <Button key={item} sx={{ color: "#fff" }}>
-                    {item}
-                  </Button>
+                  <Link
+                    activeClass="active"
+                    to={item.toLowerCase().replace(" ", "-")}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    <Button key={item} sx={{ color: "#fff" }}>
+                      {item}
+                    </Button>
+                  </Link>
                 ))}
-                <a
-                  target="_blank"
-                  href="https://goo.gl/maps/sD7PVi7azYFmiKzo9?coh=178573&entry=tt"
-                  rel="noreferrer"
+                <Link
+                  activeClass="active"
+                  to={"google-directions"}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                 >
                   <IconButton
                     size="medium"
@@ -157,7 +190,7 @@ function Navigation(props) {
                   >
                     <PinDropIcon />
                   </IconButton>
-                </a>
+                </Link>
                 <a target="_blank" href="tel:+17737637872" rel="noreferrer">
                   <IconButton
                     size="medium"

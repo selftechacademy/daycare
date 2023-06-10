@@ -45,6 +45,18 @@ const theme = createTheme({
           fontFamily: "Indie Flower",
           fontSize: "2rem",
         },
+        h3: {
+          fontFamily: "Roboto",
+          fontSize: "1.5rem",
+        },
+        h4: {
+          fontFamily: "Roboto",
+          fontSize: "1.3rem",
+        },
+        h5: {
+          fontFamily: "Roboto",
+          fontSize: "1.2rem",
+        },
         p: {
           fontFamily: "Roboto",
           fontSize: "1.2rem",

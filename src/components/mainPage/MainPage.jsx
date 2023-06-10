@@ -1,6 +1,6 @@
 import Button from "@mui/material/Button";
 import backgroundOne from "./../../images/daycare.jpg";
-import backgroundTwo from "./../../images/daycare2.jpg";
+// import backgroundTwo from "./../../images/daycare2.jpg";
 import backgroundThree from "./../../images/daycare3.jpg";
 import backgroundFour from "./../../images/cdc-8LITuYkZRIo-unsplash.jpg";
 import React from "react";
@@ -14,7 +14,7 @@ import "./mainPage.style.css";
 
 const MainPage = () => {
   return (
-    <div className="main-page-container">
+    <div className="main-page-container" id="home">
       <Swiper
         loop={true}
         speed={2000}
@@ -30,11 +30,15 @@ const MainPage = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={backgroundOne} className="main-background" alt="children" />
+          <img
+            src={backgroundFour}
+            className="main-background"
+            alt="children"
+          />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={backgroundTwo} className="main-background" alt="children" />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <img
             src={backgroundThree}
@@ -43,11 +47,7 @@ const MainPage = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={backgroundFour}
-            className="main-background"
-            alt="children"
-          />
+          <img src={backgroundOne} className="main-background" alt="children" />
         </SwiperSlide>
       </Swiper>
       <div className="main-page">
@@ -69,7 +69,7 @@ const MainPage = () => {
             Shine!
           </li>
         </ul>
-        <Button
+        {/* <Button
           variant="contained"
           className="main-page-btn"
           style={{
@@ -82,7 +82,7 @@ const MainPage = () => {
           }}
         >
           Learn More
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

@@ -81,15 +81,18 @@ export default function FaqsFunction() {
   };
 
   return (
-    <div className="faq-container">
+    <div className="faq-container" id="faq">
       <div className="faq-blocks">
         <Accordion
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
         >
           <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            <Typography sx={{
-              fontFamily: "Indie Flower"}}>
+            <Typography
+              sx={{
+                fontFamily: "Indie Flower",
+              }}
+            >
               How can I bid for your products?
             </Typography>
           </AccordionSummary>
