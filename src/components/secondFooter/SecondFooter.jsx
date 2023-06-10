@@ -1,11 +1,15 @@
 import React from "react";
 import "./secondFooter.style.css";
+import theme from "../../theme";
 
 function SecondFooter() {
   const currentYear = new Date();
 
   return (
-    <footer className="new_footer_area bg_color">
+    <footer
+      className="new_footer_area bg_color"
+      style={{ backgroundColor: theme.palette.primary.main }}
+    >
       <div className="new_footer_top">
         <div className="container">
           <div className="row">
@@ -98,6 +102,7 @@ function SecondFooter() {
         <div className="footer_bg">
           <div className="footer_bg_one"></div>
           <div className="footer_bg_two"></div>
+          <p>THE BEST DAYCARE IN YOUR NEIGHBORHOOD</p>
         </div>
       </div>
       <div className="footer_bottom">
