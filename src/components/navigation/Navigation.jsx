@@ -28,9 +28,7 @@ const navItems = ["Home", "Why US", "Our Nannies", "Reviews", "Contact", "FAQ"];
 
 function HideOnScroll(props) {
   const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
+
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
   });
@@ -49,14 +47,6 @@ function Navigation(props) {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-
-  //   const showInMapClicked = () => {
-  //     window.open(
-  //       `https://www.google.com/maps/place/Helen+Lucy+Child+Care+Center/@41.987226,-87.7918279,17z/data=!4m14!1m7!3m6!1s0x880fc95b3afd064f:0xa40bfcc70b23822e!2sHelen+Lucy+Child+Care+Center!8m2!3d41.987222!4d-87.789253!16s%2Fg%2F1v940nmd!3m5!1s0x880fc95b3afd064f:0xa40bfcc70b23822e!8m2!3d41.987222!4d-87.789253!16s%2Fg%2F1v940nmd?authuser=0&entry=ttu`,
-  //       `_blank`,
-  //       `noopener`
-  //     );
-  //   };
 
   const drawer = (
     <ThemeProvider theme={theme}>
