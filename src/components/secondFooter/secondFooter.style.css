@@ -155,17 +155,6 @@ h6 {
   height: 250px;
 }
 
-/* .new_footer_top .footer_bg .footer_bg_two {
-  background: url("../images/ORANGE_SIGN.png") no-repeat center center;
-  width: 88px;
-  height: 25px;
-  background-size: 100%;
-  zoom: 1300%;
-  bottom: 0;
-  left: 5%;
-  position: absolute;
-} */
-
 .row {
   display: flex;
   flex-direction: row;
