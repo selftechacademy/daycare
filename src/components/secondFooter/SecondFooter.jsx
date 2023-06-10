@@ -98,6 +98,7 @@ function SecondFooter() {
         <div className="footer_bg">
           <div className="footer_bg_one"></div>
           <div className="footer_bg_two"></div>
+          <p>THE BEST DAYCARE IN YOUR NEIGHBORHOOD</p>
         </div>
       </div>
       <div className="footer_bottom">
