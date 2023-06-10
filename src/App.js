@@ -10,6 +10,8 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import theme from "./theme";
 import "./App.css";
 import AgeGroup from "./components/ageGroup/AgeGroup";
+import FaqsFunction from "./components/faqs/FaqsFunction.jsx";
+
 import CallRequest from "./components/callRequest/CallRequest";
 import SecondFooter from "./components/secondFooter/SecondFooter";
 
@@ -25,6 +27,7 @@ function App() {
       <AgeGroup />
       <NanniesCard />
       <GoogleMapsDirections />
+      <FaqsFunction />
       <CallRequest />
       {/* <Footer /> */}
       <SecondFooter />
