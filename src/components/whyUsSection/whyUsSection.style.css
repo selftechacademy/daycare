@@ -3,15 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+/* body {
   font-family: "Source Code Pro", monospace;
   color: white;
-}
+} */
 
-.container {
+.containerWhyUs {
   display: grid;
   grid-template-columns: 3fr 4fr;
-  /* background-color: rgba(156, 166, 239, 0.177); */
   height: 80vh;
   padding: 20px;
   align-items: baseline;

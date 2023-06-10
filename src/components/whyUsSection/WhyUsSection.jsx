@@ -11,7 +11,7 @@ import theme from "../../theme";
 
 const WhyUsSection = () => {
   return (
-    <div className="container" id="why-us">
+    <div className="containerWhyUs" id="why-us">
       <div className="header">
         <h1 className="header-text">Why you should choose US?</h1>
         <h4>
